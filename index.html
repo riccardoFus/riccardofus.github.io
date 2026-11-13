@@ -3,104 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-  <meta name="theme-color" content="#0a0a0c" />
+  <meta name="theme-color" content="#0c0a0b" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="color-scheme" content="dark" />
   <style>
-    /* Prevent white flash on mobile */
-    html, body { background-color: #0a0a0c !important; }
+    html, body { background-color: #0c0a0b !important; }
   </style>
-  <title>Riccardo Fusiello | Issue #01 — AI Developer</title>
-  <!-- Google Fonts (Comic Noir type system) -->
+  <title>Riccardo Fusiello — Software Developer, Odoo ERP & AI</title>
+  <meta name="description" content="Riccardo Fusiello is a software developer and AI student based in Andria, Italy. He works on Odoo ERP implementations, custom web apps and automations that save teams time." />
+  <meta name="keywords" content="Riccardo Fusiello, software developer, Odoo ERP, Odoo developer, web apps, Angular, Python, automation, artificial intelligence, Andria, Italy" />
+  <meta name="author" content="Riccardo Fusiello" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://riccardofus.github.io/Cavi-Website/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Riccardo Fusiello — Software Developer, Odoo ERP & AI" />
+  <meta property="og:description" content="Odoo ERP implementations, custom web apps and automations. Software developer and AI student based in Andria, Italy." />
+  <meta property="og:url" content="https://riccardofus.github.io/Cavi-Website/" />
+  <meta property="og:image" content="https://riccardofus.github.io/Cavi-Website/misc/1756748267986.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:site_name" content="Riccardo Fusiello" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Riccardo Fusiello — Software Developer, Odoo ERP & AI" />
+  <meta name="twitter:description" content="Odoo ERP implementations, custom web apps and automations. Software developer and AI student based in Andria, Italy." />
+  <meta name="twitter:image" content="https://riccardofus.github.io/Cavi-Website/misc/1756748267986.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Riccardo Fusiello",
+        "jobTitle": "Software Developer",
+        "description": "Software developer and AI student working on Odoo ERP implementations, web apps and automations.",
+        "url": "https://riccardofus.github.io/Cavi-Website/",
+        "image": "https://riccardofus.github.io/Cavi-Website/misc/1756748267986.png",
+        "address": { "@type": "PostalAddress", "addressLocality": "Andria", "addressCountry": "IT" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "University of Bari" },
+          { "@type": "CollegeOrUniversity", "name": "University of Trento" }
+        ],
+        "knowsAbout": ["Odoo ERP", "Software Engineering", "Artificial Intelligence", "Web Development", "Automation"],
+        "sameAs": [
+          "https://www.linkedin.com/in/riccardo-fusiello-a02446216/",
+          "https://github.com/riccardofus",
+          "https://www.instagram.com/riccardo.fusiello/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Riccardo Fusiello",
+        "url": "https://riccardofus.github.io/Cavi-Website/"
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Special+Elite&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS (grid + collapse only) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
     crossorigin="anonymous"
   />
-  <!-- Font Awesome (For Icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style/styleNew.css" />
 </head>
 <body>
 
-  <!-- ============================================================
-       INK SPLASH PAGE TRANSITION
-  ============================================================ -->
-  <div class="ink-splash" id="inkSplash" aria-hidden="true">
-    <span class="ink-splash__blot"></span>
-  </div>
-
-  <!-- ============================================================
-       PRINT OVERLAYS / TEXTURES
-  ============================================================ -->
-  <div class="comic-grain" aria-hidden="true"></div>
-  <div class="comic-vignette" aria-hidden="true"></div>
-  <div class="halftone-floor" aria-hidden="true"></div>
-  <div class="speed-lines" id="speedLines" aria-hidden="true"></div>
-  <div class="scanlines" aria-hidden="true"></div>
-
-  <!-- Custom inked cursor -->
-  <div class="cursor" id="cursor" aria-hidden="true">
-    <span class="cursor__ring"></span>
-    <span class="cursor__dot"></span>
-    <span class="cursor__label">OPEN</span>
-  </div>
-  <div class="ink-trail" id="inkTrail" aria-hidden="true"></div>
-
-  <!-- Scroll Progress as an ink stroke -->
   <div class="scroll-progress" aria-hidden="true">
-    <div class="scroll-progress-fill" id="scrollProgressFill"></div>
-    <span class="scroll-progress__label">INK</span>
+    <div class="scroll-progress__fill" id="scrollProgressFill"></div>
   </div>
 
-  <!-- ============================================================
-       LOADING SCREEN — "PRINTING THE ISSUE"
-  ============================================================ -->
-  <div class="loading-screen" id="loadingScreen">
-    <div class="loading-mark">A CAVI PRODUCTION</div>
-    <div class="loading-text">
-      <span class="dos-prompt">C:\&gt;</span> <span id="loadingText">PRINTING ISSUE #01...</span>
-    </div>
-    <div class="loading-bar">
-      <div class="loading-bar-fill" id="loadingBarFill"></div>
-    </div>
-    <div class="loading-scan">HALFTONE · INK · NOIR · CYBER</div>
+  <div class="loading" id="loadingScreen">
+    <div class="loading__brand">Riccardo Fusiello</div>
+    <div class="loading__text" id="loadingText">Loading</div>
+    <div class="loading__bar"><div class="loading__fill" id="loadingBarFill"></div></div>
   </div>
 
-  <!-- ============================================================
-       NAVIGATION — MASTHEAD
-  ============================================================ -->
-  <nav class="navbar navbar-expand-lg fixed-top comic-nav">
+  <nav class="navbar navbar-expand-lg fixed-top site-nav">
     <div class="container">
-      <a class="nav-brand" href="#hero">
-        <span class="nav-brand__mark">CAVI</span>
-        <span class="nav-brand__sub">COMICS · #01</span>
+      <a class="nav-brand" href="#top">
+        <span class="nav-brand__name">Riccardo Fusiello</span>
+        <span class="nav-brand__role">Software &amp; AI</span>
       </a>
-      <button class="navbar-toggler vapor-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="vapor-toggler-bars">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bars"><span></span><span></span><span></span></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about-section" data-i18n="nav_about">// About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav_skills">// Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav_experience">// Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav_education">// Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav_projects">// Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lists" id="listsNavLink" data-i18n="nav_lists">// Lists</a></li>
-          <li class="nav-item"><a class="nav-link" href="#music" data-i18n="nav_music">// Music</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">// Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav_experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work" data-i18n="nav_work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lists" id="listsNavLink" data-i18n="nav_lists">Lists</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#music" data-i18n="nav_music">Music</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
           <li class="nav-item">
-            <button class="lang-toggle" id="langToggle" title="Switch Language">
+            <button class="lang-toggle" id="langToggle" title="Switch language">
               <span class="lang-flag" id="langFlag">🇬🇧</span>
               <span class="lang-label" id="langLabel">EN</span>
             </button>
@@ -110,466 +114,408 @@
     </div>
   </nav>
 
-  <!-- ============================================================
-       HERO — "COVER ISSUE #1"
-  ============================================================ -->
-  <header id="hero" class="hero-section">
-    <!-- parallax layers -->
-    <div class="hero-city" aria-hidden="true"></div>
-    <div class="hero-rain" aria-hidden="true"></div>
-    <div class="hero-smoke" aria-hidden="true"></div>
-    <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
-
-    <div class="container hero-content">
-      <div class="issue-badge" data-depth="0.06">
-        <span class="issue-badge__num">#01</span>
-        <span class="issue-badge__txt">COLLECTOR'S EDITION</span>
+  <header id="top" class="hero">
+    <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="eyebrow hero__eyebrow" data-i18n="hero_eyebrow">Portfolio — 2026</p>
+      <h1 class="hero__title">
+        <span>Riccardo</span>
+        <span>Fusiello</span>
+      </h1>
+      <p class="hero__lead" data-i18n="hero_lead">I'm a software developer and AI student from southern Italy. I like turning messy problems into simple tools — and I'm happiest when something I built quietly does its job.</p>
+      <div class="hero__actions">
+        <a href="misc/CV.pdf" target="_blank" class="btn btn--primary" data-i18n="hero_cv">Download CV</a>
+        <a href="#contact" class="btn btn--ghost" data-i18n="hero_contact">Get in touch</a>
       </div>
-      <p class="hero-kicker" data-depth="0.04" data-i18n="hero_kicker">A CAVI PRODUCTION · ISSUE #01</p>
-      <h1 class="hero-title glitch" data-depth="0.02" data-text="Riccardo Fusiello">Riccardo Fusiello</h1>
-      <p class="hero-subtitle" data-depth="0.03"><span id="heroTyped">AI Student &amp; Software Developer</span><span class="typing-cursor"></span></p>
-      <div class="hero-actions" data-depth="0.02">
-        <a href="misc/CV.pdf" target="_blank" class="btn-vapor">
-          <i class="fas fa-download me-2"></i> <span data-i18n="hero_cv">DOWNLOAD_CV.exe</span>
-        </a>
-        <a href="#contact" class="btn-vapor btn-vapor--blood">
-          <i class="fas fa-envelope me-2"></i> <span data-i18n="hero_contact">CONTACT.bat</span>
-        </a>
+      <div class="hero__meta">
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hero_location">Andria, Italy</span></span>
+        <span class="status"><i></i> <span data-i18n="hero_status">Open to opportunities</span></span>
       </div>
     </div>
-
-    <div class="hero-stamp" data-depth="0.08">OPEN TO OPPORTUNITIES · 2026</div>
-    <div class="hero-barcode" data-depth="0.07" aria-hidden="true">
-      <span class="hero-barcode__bars"></span>
-      <span class="hero-barcode__code">0 0111 0100 1101</span>
-    </div>
-    <div class="hero-scrollcue" aria-hidden="true">
-      <span>SCROLL</span><i class="fas fa-chevron-down"></i>
-    </div>
+    <a class="hero__scroll" href="#about" aria-label="Scroll to about">
+      <span></span>
+    </a>
   </header>
 
-  <!-- ============================================================
-       PROFILE — "WHO IS CAVI" ID CARD
-  ============================================================ -->
-  <section id="profile-intro" class="profile-intro-section">
-    <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-md-4 d-flex justify-content-center ink-reveal ink-reveal--left">
-          <div class="id-card comic-panel tilt-card">
-            <div class="id-card__frame">
-              <img class="profile-photo" src="misc/1756748267986.png" alt="Riccardo Fusiello"/>
-              <span class="id-card__scan"></span>
+  <main>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__portrait reveal" style="--d:.05s">
+            <div class="portrait">
+              <img src="misc/1756748267986.png" alt="Riccardo Fusiello" class="portrait__img">
             </div>
-            <div class="id-card__stamp">FILE #01</div>
-            <span class="id-card__barcode"></span>
           </div>
-        </div>
-        <div class="col-md-8 ink-reveal ink-reveal--right">
-          <p class="section-kicker" data-issue="00">CHARACTER FILE</p>
-          <h2 class="section-title text-start" data-i18n="profile_hello">Hello!</h2>
-          <p class="lead" data-i18n="profile_intro">
-            I am a <strong>Software Developer</strong> and <strong>AI Student</strong> based in Andria, Italy.
-          </p>
-          <p data-i18n="profile_detail">
-            Currently enrolled in the Master's Degree in <strong>Artificial Intelligence</strong> at the <a href="https://www.uniba.it/it" target="_blank">University of Bari</a>.
-            I previously graduated in Computer Science from the <a href="https://www.unitn.it/en" target="_blank">University of Trento</a>.
-          </p>
-          <p class="id-location"><i class="fas fa-map-marker-alt me-2"></i> Via Pericle 120, 76123 Andria (Italia)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       ABOUT — "THE ORIGIN STORY"
-  ============================================================ -->
-  <section id="about-section" class="about-me-section">
-    <div class="container">
-      <p class="section-kicker" data-issue="01">ISSUE #01 — THE ORIGIN STORY</p>
-      <h2 class="section-title" data-text="Origin Story" data-i18n="about_title" data-i18n-glitch="about_title">About Me</h2>
-
-      <div class="row g-4 mt-2">
-        <div class="col-lg-10 mx-auto ink-reveal">
-          <div class="win95-window tilt-card">
-            <div class="win95-titlebar">
-              <span class="win95-titlebar-text" data-i18n="about_win_title">about_me.txt</span>
-              <div class="win95-controls">
-                <div class="win95-btn">_</div>
-                <div class="win95-btn">□</div>
-                <div class="win95-btn">✕</div>
+          <div class="about__body">
+            <p class="eyebrow reveal" style="--d:.1s" data-i18n="about_eyebrow">01 — About</p>
+            <h2 class="section-title reveal" style="--d:.15s" data-i18n="about_title">A bit about me</h2>
+            <p class="section-lead reveal" style="--d:.2s" data-i18n="about_p1">I'm Riccardo. I write software, study artificial intelligence, and spend a lot of time wondering how things fit together. My work sits between engineering and research: building the practical parts, then figuring out what's really going on underneath.</p>
+            <p class="reveal" style="--d:.25s" data-i18n="about_p2">I studied computer science in Trento and I'm now finishing a master's in AI in Bari. Away from the screen I'm usually listening to records, mixing a set, or chasing the next thing to learn. I like curious people, and I try to be one.</p>
+            <dl class="facts reveal" style="--d:.3s">
+              <div class="fact">
+                <dt data-i18n="fact_location_label">Based in</dt>
+                <dd data-i18n="fact_location">Andria, Italy</dd>
               </div>
+              <div class="fact">
+                <dt data-i18n="fact_education_label">Studying</dt>
+                <dd data-i18n="fact_education">MSc Artificial Intelligence, University of Bari</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="fact_focus_label">Working on</dt>
+                <dd data-i18n="fact_focus">Software, machine learning, and the space between</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt skills">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="skills_eyebrow">02 — Toolkit</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="skills_title">What I work with</h2>
+        <div class="skills__grid">
+          <div class="skill-group reveal" style="--d:.1s">
+            <h3 class="skill-group__title" data-i18n="skills_languages">Languages</h3>
+            <ul class="tags">
+              <li>C / C++</li><li>Java</li><li>Kotlin</li><li>Python</li><li>JavaScript</li><li>HTML / CSS</li><li>SQL</li><li>Shell / Bash</li><li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal" style="--d:.18s">
+            <h3 class="skill-group__title" data-i18n="skills_frameworks">Frameworks &amp; tools</h3>
+            <ul class="tags">
+              <li>Jetpack Compose</li><li>Arduino</li><li>Google Workspace</li><li>Git</li><li>Linux</li><li>Angular</li><li>Odoo</li><li>OWL</li><li>TensorFlow / Keras</li><li>PyTorch</li><li>n8n</li><li>Dagshub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="exp_eyebrow">03 — Experience</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="exp_title">Where I've worked</h2>
+        <div class="timeline">
+          <article class="timeline__item reveal" style="--d:.08s">
+            <span class="timeline__date">2024 — Present</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job1_title">Software Developer</h3>
+              <p class="timeline__org">System Project S.r.L, Andria</p>
+              <p class="timeline__desc" data-i18n="job1_desc">Software solutions and system integration for business clients.</p>
             </div>
-            <div class="win95-body">
-              <p class="lead mb-4" data-i18n="about_p1">
-                I don't just write code — I architect intelligent systems. My sweet spot is where software engineering meets artificial intelligence: taking complex research and turning it into products that actually work. Precision, curiosity, and a relentless drive to build define my approach.
-              </p>
-              <p data-i18n="about_p2">
-                Beyond the code, music is my way of life. Born in 2002 and surrounded by music-loving parents, I am a passionate <strong>DJ</strong>. Whether I'm training a Machine Learning model or mixing a set, I'm driven by creativity and the desire to create something unique.
-              </p>
+          </article>
+          <article class="timeline__item reveal" style="--d:.14s">
+            <span class="timeline__date">2024 — Present</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job2_title">Freelance Developer</h3>
+              <p class="timeline__org" data-i18n="job2_company">Self-employed</p>
+              <p class="timeline__desc" data-i18n="job2_desc">Automating psychological assessments with Google Workspace scripting.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.2s">
+            <span class="timeline__date">2024</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job3_title">Machine Learning Intern</h3>
+              <p class="timeline__org">University of Trento</p>
+              <p class="timeline__desc" data-i18n="job3_desc">Research and implementation of machine learning models for academic projects.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.26s">
+            <span class="timeline__date">2023 — 2024</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job4_title">IT Service Desk</h3>
+              <p class="timeline__org">University of Trento</p>
+              <p class="timeline__desc" data-i18n="job4_desc">Technical support and troubleshooting for students and staff.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.32s">
+            <span class="timeline__date">2022</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job5_title">Full Stack Developer</h3>
+              <p class="timeline__org" data-i18n="job5_company">Reply S.p.A, Remote</p>
+              <p class="timeline__desc" data-i18n="job5_desc">A short, intense development project.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.38s">
+            <span class="timeline__date">2020</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job6_title">Full Stack Developer</h3>
+              <p class="timeline__org" data-i18n="job6_company">Nuvité S.r.L, Andria</p>
+              <p class="timeline__desc" data-i18n="job6_desc">Web development and database work.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section--alt education">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="edu_eyebrow">04 — Education</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="edu_title">Where I studied</h2>
+        <div class="edu-grid">
+          <article class="edu-card reveal" style="--d:.08s">
+            <span class="edu-card__badge" data-i18n="edu_present">Present</span>
+            <h3 class="edu-card__title" data-i18n="edu_master_title">MSc in Artificial Intelligence</h3>
+            <p class="edu-card__org" data-i18n="edu_master_uni">University of Bari</p>
+            <p class="edu-card__desc" data-i18n="edu_master_desc">Machine learning, deep learning and data science.</p>
+          </article>
+          <article class="edu-card reveal" style="--d:.14s">
+            <span class="edu-card__badge">2021 — 2024</span>
+            <h3 class="edu-card__title" data-i18n="edu_bachelor_title">BSc in Computer Science</h3>
+            <p class="edu-card__org" data-i18n="edu_bachelor_uni">University of Trento</p>
+            <p class="edu-card__desc" data-i18n="edu_bachelor_desc">Graduated 106/110. Thesis on software architecture.</p>
+          </article>
+          <article class="edu-card reveal" style="--d:.2s">
+            <span class="edu-card__badge">2016 — 2021</span>
+            <h3 class="edu-card__title" data-i18n="edu_diploma_title">Diploma in IT</h3>
+            <p class="edu-card__org" data-i18n="edu_diploma_school">ITIS Sen. Onofrio Jannuzzi</p>
+            <p class="edu-card__desc" data-i18n="edu_diploma_desc">Graduated 100/100 with honours.</p>
+          </article>
+        </div>
+        <div class="certs reveal" style="--d:.24s">
+          <h3 class="certs__title" data-i18n="cert_title">Certifications</h3>
+          <ul class="certs__list">
+            <li>CCNA Routing and Switching <span>2020</span></li>
+            <li>Comau Academy <span>2021</span></li>
+            <li>Odoo Masterclass <span>2024</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="work_eyebrow">05 — What I build</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="work_title">Things I build</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="work_intro">Most of my work sits in three places: Odoo implementations, web apps, and the small automations that quietly save people time.</p>
+
+        <div class="work-grid">
+          <article class="work-card work-card--wide reveal" style="--d:.14s">
+            <p class="work-card__index">01</p>
+            <h3 class="work-card__title" data-i18n="odoo_title">Odoo ERP</h3>
+            <p class="work-card__text" data-i18n="odoo_desc">I've worked on several Odoo implementations for companies in different sectors. Custom modules, data migrations, integrations and process changes — the details belong to the client, but the goal is always the same: make the system fit the way the business actually works.</p>
+            <ul class="tags work-tags">
+              <li data-i18n="odoo_tag1">Custom modules</li>
+              <li data-i18n="odoo_tag2">Data migration</li>
+              <li data-i18n="odoo_tag3">Integrations</li>
+              <li data-i18n="odoo_tag4">Process design</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal" style="--d:.2s">
+            <p class="work-card__index">02</p>
+            <h3 class="work-card__title" data-i18n="musicwork_title">Music &amp; audio</h3>
+            <ul class="work-list">
+              <li>
+                <h4 data-i18n="musicwork1_name">Spotify Downloader</h4>
+                <p data-i18n="musicwork1_desc">An Angular + Node app for downloading tracks, albums and playlists, with live progress, logs and rate limiting.</p>
+              </li>
+              <li>
+                <h4 data-i18n="musicwork2_name">DJ Preview</h4>
+                <p data-i18n="musicwork2_desc">Downloads a DJ set from YouTube, finds the transitions and cuts a one-minute preview around each one.</p>
+              </li>
+              <li>
+                <h4 data-i18n="musicwork3_name">Discogs to Preview</h4>
+                <p data-i18n="musicwork3_desc">An LLM reads Discogs listings, finds the matching previews on YouTube and plays them.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal" style="--d:.26s">
+            <p class="work-card__index">03</p>
+            <h3 class="work-card__title" data-i18n="datawork_title">Data &amp; automation</h3>
+            <ul class="work-list">
+              <li>
+                <h4 data-i18n="datawork1_name">Expense report</h4>
+                <p data-i18n="datawork1_desc">Reads a bank statement in ODS, calculates the KPIs and generates a standalone HTML report with charts and CSVs.</p>
+              </li>
+              <li>
+                <h4 data-i18n="datawork2_name">Facebook leads → Odoo</h4>
+                <p data-i18n="datawork2_desc">A daily sync that turns Facebook Lead Ads into CRM opportunities, without manual exports.</p>
+              </li>
+              <li>
+                <h4 data-i18n="datawork3_name">Label printing</h4>
+                <p data-i18n="datawork3_desc">Sends ZPL labels directly to Honeywell printers over the network or serial port.</p>
+              </li>
+              <li>
+                <h4 data-i18n="datawork4_name">Docs to Markdown</h4>
+                <p data-i18n="datawork4_desc">Crawls a documentation site and turns the whole tree into a single Markdown file.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="work-card work-card--wide reveal" style="--d:.32s">
+            <p class="work-card__index">04</p>
+            <h3 class="work-card__title" data-i18n="aiwork_title">AI projects</h3>
+            <ul class="work-list work-list--grid">
+              <li>
+                <h4 data-i18n="aiwork1_name">Gen Z Wellness Predictor</h4>
+                <p data-i18n="aiwork1_desc">A machine learning pipeline that predicts mental health indicators from lifestyle and biometric data, comparing ensembles and neural networks.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork2_name">Handwritten Digit Recognition</h4>
+                <p data-i18n="aiwork2_desc">A CNN served by Flask with an Angular canvas for real-time digit recognition.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork3_name">Face Clustering</h4>
+                <p data-i18n="aiwork3_desc">Detects faces in a photo archive and groups them by person using embeddings and DBSCAN.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork4_name">AI Image Enhancer</h4>
+                <p data-i18n="aiwork4_desc">A command-line upscaler built on Real-ESRGAN, with GPU support and tiling for small cards.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork5_name">Agentic Orchestration</h4>
+                <p data-i18n="aiwork5_desc">A small, readable pipeline where research, writing and review agents hand work to each other.</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Old project card, kept for reference:
+        <article class="project reveal" style="--d:.1s" data-title="Shelfy" data-quote="A quiet place for the books you actually own.">
+          <div class="project__media" aria-hidden="true"><span class="project__icon"><i class="fas fa-book-open"></i></span></div>
+          <div class="project__body">
+            <p class="project__index">01</p>
+            <h3 class="project__title" data-i18n="project_title">Shelfy</h3>
+            <p class="project__quote" data-i18n="project_quote">A quiet place for the books you actually own.</p>
+            <p class="project__desc" data-i18n="project_desc">A small library app for the books I own and lend. It began as a fix for my own shelf and ended up teaching me how much work goes into keeping something simple.</p>
+          </div>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <!-- Music and roulette are kept here for reference. Remove this comment block to restore them.
+    <section id="music" class="section section--alt music">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="music_eyebrow">06 — Sound</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="music_title">cavi.wav</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="music_tagline">Records, mixes and late-night discoveries.</p>
+
+        <div class="tabs reveal" style="--d:.14s">
+          <button class="tab is-active" data-tab="spotify" data-i18n="music_tab_spotify">Spotify</button>
+          <button class="tab" data-tab="youtube" data-i18n="music_tab_youtube">YouTube</button>
+          <button class="tab" data-tab="instagram" data-i18n="music_tab_instagram">Instagram</button>
+        </div>
+
+        <div class="panel is-active" id="panel-spotify">
+          <div class="spotify-grid">
+            <div class="spotify-card reveal" style="--d:.05s">
+              <iframe src="https://open.spotify.com/embed/playlist/5WXVYnbA08tIUIexoFm0GP" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Jazz-Funky House</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.1s">
+              <iframe src="https://open.spotify.com/embed/playlist/3mCXkog9fWWtxIYX5mbaWJ" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Glitchato</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.15s">
+              <iframe src="https://open.spotify.com/embed/playlist/39CWgfBArrnIoXfnEpK1XA" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Soundtrack fuori di testa</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.2s">
+              <iframe src="https://open.spotify.com/embed/playlist/6AYfZqv8yufAK4ynfZICKw" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Jungle Vibes</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.25s">
+              <iframe src="https://open.spotify.com/embed/playlist/7pCNudfXyp25BJp5EGXy1m" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Dream man</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.3s">
+              <iframe src="https://open.spotify.com/embed/playlist/72c80SP8YSASEz9Bkwkxh2" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Karaokando</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       SKILLS — "POWER SET"
-  ============================================================ -->
-  <section id="skills" class="skills-section">
-    <div class="container">
-      <p class="section-kicker" data-issue="02">ISSUE #02 — POWER SET</p>
-      <h2 class="section-title" data-text="Technical Skills" data-i18n="skills_title" data-i18n-glitch="skills_title">Technical Skills</h2>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-9 text-center ink-reveal">
-          <h4 class="power-heading" data-i18n="skills_languages">// LANGUAGES</h4>
-          <div class="badge-cloud mb-5">
-            <span class="skill-badge">C / C++</span>
-            <span class="skill-badge">Java</span>
-            <span class="skill-badge">Kotlin</span>
-            <span class="skill-badge">Python</span>
-            <span class="skill-badge">JavaScript</span>
-            <span class="skill-badge">HTML / CSS</span>
-            <span class="skill-badge">SQL</span>
-            <span class="skill-badge">Shell / Bash</span>
-            <span class="skill-badge">PHP</span>
-          </div>
-
-          <h4 class="power-heading" data-i18n="skills_frameworks">// FRAMEWORKS & TOOLS</h4>
-          <div class="badge-cloud">
-            <span class="skill-badge">Jetpack Compose</span>
-            <span class="skill-badge">Arduino</span>
-            <span class="skill-badge">Google Suite Scripting</span>
-            <span class="skill-badge">Git</span>
-            <span class="skill-badge">Linux</span>
-            <span class="skill-badge">Angular</span>
-            <span class="skill-badge">Odoo</span>
-            <span class="skill-badge">OWL Framework</span>
-            <span class="skill-badge">TensorFlow/Keras</span>
-            <span class="skill-badge">PyTorch</span>
-            <span class="skill-badge">n8n</span>
-            <span class="skill-badge">Dagshub</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       EXPERIENCE — "CASE FILES"
-  ============================================================ -->
-  <section id="experience" class="experience-section">
-    <div class="container">
-      <p class="section-kicker" data-issue="03">ISSUE #03 — CASE FILES</p>
-      <h2 class="section-title" data-text="Case Files" data-i18n="experience_title" data-i18n-glitch="experience_title">Working Experience</h2>
-
-      <div class="case-files">
-        <!-- Job 1 -->
-        <article class="case-file comic-panel tilt-card ink-reveal">
-          <span class="case-file__tab">CASE 01</span>
-          <div class="case-file__body">
-            <span class="case-file__date">06/09/2024 — PRESENT</span>
-            <h4 class="case-file__title" data-i18n="job1_title">Software Developer</h4>
-            <h5 class="case-file__org">System Project S.r.L, Andria</h5>
-            <p data-i18n="job1_desc">Development of software solutions and system integration.</p>
-          </div>
-        </article>
-
-        <!-- Job 2 -->
-        <article class="case-file comic-panel tilt-card ink-reveal">
-          <span class="case-file__tab">CASE 02</span>
-          <div class="case-file__body">
-            <span class="case-file__date">10/05/2024 — PRESENT</span>
-            <h4 class="case-file__title" data-i18n="job2_title">Freelance Developer</h4>
-            <h5 class="case-file__org" data-i18n="job2_company">Self-employed</h5>
-            <p data-i18n="job2_desc">Automation of psychological tests using Google Suite scripting.</p>
-          </div>
-        </article>
-
-        <!-- Job 3 -->
-        <article class="case-file comic-panel tilt-card ink-reveal">
-          <span class="case-file__tab">CASE 03</span>
-          <div class="case-file__body">
-            <span class="case-file__date">05/02/2024 — 29/03/2024</span>
-            <h4 class="case-file__title" data-i18n="job3_title">Machine Learning Intern</h4>
-            <h5 class="case-file__org">University of Trento</h5>
-            <p data-i18n="job3_desc">Research and implementation of ML models for academic projects.</p>
-          </div>
-        </article>
-
-        <!-- Job 4 -->
-        <article class="case-file comic-panel tilt-card ink-reveal">
-          <span class="case-file__tab">CASE 04</span>
-          <div class="case-file__body">
-            <span class="case-file__date">13/03/2023 — 29/03/2024</span>
-            <h4 class="case-file__title" data-i18n="job4_title">IT Service Desk</h4>
-            <h5 class="case-file__org">University of Trento</h5>
-            <p data-i18n="job4_desc">Technical support and hardware/software troubleshooting for students and staff.</p>
-          </div>
-        </article>
-
-        <!-- Job 5 -->
-        <article class="case-file comic-panel tilt-card ink-reveal">
-          <span class="case-file__tab">CASE 05</span>
-          <div class="case-file__body">
-            <span class="case-file__date">01/03/2022 — 15/03/2022</span>
-            <h4 class="case-file__title" data-i18n="job5_title">Full Stack Developer</h4>
-            <h5 class="case-file__org" data-i18n="job5_company">Reply S.p.A, Remote</h5>
-            <p data-i18n="job5_desc">Short-term intense development project.</p>
-          </div>
-        </article>
-
-        <!-- Job 6 -->
-        <article class="case-file comic-panel tilt-card ink-reveal">
-          <span class="case-file__tab">CASE 06</span>
-          <div class="case-file__body">
-            <span class="case-file__date">15/06/2020 — 15/09/2020</span>
-            <h4 class="case-file__title" data-i18n="job6_title">Full Stack Developer</h4>
-            <h5 class="case-file__org" data-i18n="job6_company">Nuvité S.r.l, Andria</h5>
-            <p data-i18n="job6_desc">Web development and database management.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       EDUCATION — "ORIGIN CHAPTERS"
-  ============================================================ -->
-  <section id="education" class="education-section">
-    <div class="container">
-      <p class="section-kicker" data-issue="04">ISSUE #04 — ORIGIN CHAPTERS</p>
-      <h2 class="section-title" data-text="Education" data-i18n="education_title" data-i18n-glitch="education_title">Education &amp; Certifications</h2>
-
-      <div class="row g-4">
-        <div class="col-md-4 ink-reveal">
-          <div class="origin-card comic-panel scanline-overlay tilt-card">
-            <span class="origin-card__badge" data-i18n="edu_present">Present</span>
-            <span class="origin-card__chapter">CHAPTER 04</span>
-            <h5 class="origin-card__title" data-i18n="edu_master_title">Master's in AI</h5>
-            <h6 class="origin-card__org" data-i18n="edu_master_uni">University of Bari</h6>
-            <p class="origin-card__desc" data-i18n="edu_master_desc">Focus on Machine Learning, Deep Learning, and Data Science.</p>
+          <div class="panel__cta">
+            <a href="https://open.spotify.com/user/11134519888" target="_blank" class="btn btn--ghost" data-i18n="music_spotify_cta">Open all 47 playlists</a>
           </div>
         </div>
 
-        <div class="col-md-4 ink-reveal">
-          <div class="origin-card comic-panel scanline-overlay tilt-card">
-            <span class="origin-card__badge">2021 — 2024</span>
-            <span class="origin-card__chapter">CHAPTER 03</span>
-            <h5 class="origin-card__title" data-i18n="edu_bachelor_title">Bachelor's in CS</h5>
-            <h6 class="origin-card__org" data-i18n="edu_bachelor_uni">University of Trento</h6>
-            <p class="origin-card__desc" data-i18n="edu_bachelor_desc">Grade: 106/110. Thesis focused on software architecture.</p>
-          </div>
-        </div>
-
-        <div class="col-md-4 ink-reveal">
-          <div class="origin-card comic-panel scanline-overlay tilt-card">
-            <span class="origin-card__badge">2016 — 2021</span>
-            <span class="origin-card__chapter">CHAPTER 02</span>
-            <h5 class="origin-card__title" data-i18n="edu_diploma_title">Diploma in IT</h5>
-            <h6 class="origin-card__org" data-i18n="edu_diploma_school">ITIS Sen. Onofrio Jannuzzi</h6>
-            <p class="origin-card__desc" data-i18n="edu_diploma_desc">Grade: 100L/100.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="certifications-section ink-reveal">
-        <h5 class="power-heading" data-i18n="cert_title">// CERTIFICATIONS</h5>
-        <ul class="cert-list">
-          <li><i class="fas fa-certificate"></i> CCNA Routing and Switching (2020)</li>
-          <li><i class="fas fa-certificate"></i> Comau Academy (2021)</li>
-          <li><i class="fas fa-certificate"></i> Odoo Masterclass (2024)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       PROJECTS — "THE CHRONICLES"
-  ============================================================ -->
-  <section id="projects" class="projects-section">
-    <div class="container">
-      <p class="section-kicker" data-issue="05">ISSUE #05 — THE CHRONICLES</p>
-      <h2 class="section-title" data-text="The Chronicles" data-i18n="projects_title" data-i18n-glitch="projects_title">Projects</h2>
-      <p class="section-intro">Selected work and experiments.</p>
-
-      <div class="chronicles-grid">
-        <article class="chronicle chronicle--feature comic-panel tilt-card ink-reveal"
-                 data-title="Shelfy"
-                 data-quote="&quot;Digital library at your fingertips.&quot;"
-                 data-i18n-desc="project_desc">
-          <div class="chronicle__art" aria-hidden="true">
-            <span class="chronicle__halftone"></span>
-            <span class="chronicle__glyph"><i class="fas fa-book-open"></i></span>
-          </div>
-          <div class="chronicle__meta">
-            <span class="chronicle__num">CHRONICLE #01</span>
-            <h3 class="chronicle__title" data-i18n="project_win_title">shelfy_project.exe</h3>
-            <p class="chronicle__quote" data-i18n="project_quote">"Digital library at your fingertips."</p>
-            <p class="chronicle__desc" data-i18n="project_desc">A personal project focusing on digital book management, allowing users to organize and track their reading collections efficiently.</p>
-            <span class="chronicle__cta">OPEN FILE <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       MUSIC — "THE SOUNDTRACK"
-  ============================================================ -->
-  <section id="music" class="music-section">
-    <div class="container">
-      <p class="section-kicker" data-issue="06">ISSUE #06 — THE SOUNDTRACK</p>
-      <h2 class="section-title" data-text="cavi.wav" data-i18n="music_title">cavi.wav</h2>
-      <p class="music-tagline" data-i18n="music_tagline">Sharing good vibes through music 🎶✨</p>
-
-      <div class="music-tabs ink-reveal">
-        <button class="music-tab active" data-tab="spotify" data-i18n="music_tab_spotify">// SPOTIFY</button>
-        <button class="music-tab" data-tab="youtube" data-i18n="music_tab_youtube">// YOUTUBE</button>
-        <button class="music-tab" data-tab="instagram" data-i18n="music_tab_instagram">// INSTAGRAM</button>
-      </div>
-
-      <!-- ===== SPOTIFY PANEL ===== -->
-      <div class="music-panel active" id="panel-spotify">
-        <div class="spotify-grid">
-          <div class="spotify-card comic-panel tilt-card">
-            <iframe src="https://open.spotify.com/embed/playlist/5WXVYnbA08tIUIexoFm0GP" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-            <p class="spotify-label">Jazz-Funky House</p>
-          </div>
-          <div class="spotify-card comic-panel tilt-card">
-            <iframe src="https://open.spotify.com/embed/playlist/3mCXkog9fWWtxIYX5mbaWJ" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-            <p class="spotify-label">Glitchato</p>
-          </div>
-          <div class="spotify-card comic-panel tilt-card">
-            <iframe src="https://open.spotify.com/embed/playlist/39CWgfBArrnIoXfnEpK1XA" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-            <p class="spotify-label">Soundtrack fuori di testa</p>
-          </div>
-          <div class="spotify-card comic-panel tilt-card">
-            <iframe src="https://open.spotify.com/embed/playlist/6AYfZqv8yufAK4ynfZICKw" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-            <p class="spotify-label">Jungle Vibes</p>
-          </div>
-          <div class="spotify-card comic-panel tilt-card">
-            <iframe src="https://open.spotify.com/embed/playlist/7pCNudfXyp25BJp5EGXy1m" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-            <p class="spotify-label">Dream man</p>
-          </div>
-          <div class="spotify-card comic-panel tilt-card">
-            <iframe src="https://open.spotify.com/embed/playlist/72c80SP8YSASEz9Bkwkxh2" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-            <p class="spotify-label">Karaokando</p>
-          </div>
-        </div>
-        <div class="text-center mt-3">
-          <a href="https://open.spotify.com/user/11134519888" target="_blank" class="btn-vapor btn-vapor--acid music-cta">
-            <i class="fab fa-spotify me-2"></i> <span data-i18n="music_spotify_cta">Open all 47 playlists</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- ===== YOUTUBE PANEL ===== -->
-      <div class="music-panel" id="panel-youtube">
-        <div class="youtube-grid">
-          <div class="youtube-card comic-panel tilt-card">
+        <div class="panel" id="panel-youtube">
+          <div class="youtube-card reveal">
             <div class="youtube-thumb" data-href="https://www.youtube.com/@Caviiiiii">
-              <i class="fab fa-youtube youtube-play-icon"></i>
-              <div class="youtube-thumb-overlay">
-                <span data-i18n="music_yt_visit">Visit Channel</span>
-              </div>
+              <i class="fab fa-youtube youtube-play"></i>
+              <span class="youtube-thumb__label" data-i18n="music_yt_visit">Visit channel</span>
             </div>
             <div class="youtube-info">
-              <h5>cavi.wav</h5>
-              <p data-i18n="music_yt_desc">DJ sets, mixes & music content</p>
-              <a href="https://www.youtube.com/@Caviiiiii" target="_blank" class="youtube-link">
-                <i class="fab fa-youtube me-1"></i> @Caviiiiii
-              </a>
+              <h3>cavi.wav</h3>
+              <p data-i18n="music_yt_desc">DJ sets, mixes and music</p>
+              <a href="https://www.youtube.com/@Caviiiiii" target="_blank" class="link">@Caviiiiii</a>
             </div>
           </div>
+          <div class="panel__cta">
+            <a href="https://www.youtube.com/@Caviiiiii" target="_blank" class="btn btn--ghost" data-i18n="music_yt_cta">Subscribe on YouTube</a>
+          </div>
         </div>
-        <div class="text-center mt-3">
-          <a href="https://www.youtube.com/@Caviiiiii" target="_blank" class="btn-vapor music-cta">
-            <i class="fab fa-youtube me-2"></i> <span data-i18n="music_yt_cta">Subscribe on YouTube</span>
-          </a>
-        </div>
-      </div>
 
-      <!-- ===== INSTAGRAM PANEL ===== -->
-      <div class="music-panel" id="panel-instagram">
-        <div class="instagram-card comic-panel tilt-card">
-          <div class="instagram-header">
-            <div class="instagram-avatar">
-              <i class="fab fa-instagram"></i>
+        <div class="panel" id="panel-instagram">
+          <div class="instagram-card reveal">
+            <div class="instagram-header">
+              <div class="instagram-avatar"><i class="fab fa-instagram"></i></div>
+              <div>
+                <h3>cavi.media</h3>
+                <p data-i18n="music_ig_desc">Music · DJ · Vibes</p>
+              </div>
             </div>
-            <div class="instagram-meta">
-              <h5>cavi.media</h5>
-              <p data-i18n="music_ig_desc">Music · DJ · Vibes</p>
-            </div>
-          </div>
-          <div class="instagram-preview">
             <div class="instagram-post" data-href="https://www.instagram.com/cavi.media">
-              <i class="fab fa-instagram ig-post-icon"></i>
-              <span data-i18n="music_ig_visit">View Profile</span>
+              <i class="fab fa-instagram"></i>
+              <span data-i18n="music_ig_visit">View profile</span>
             </div>
-          </div>
-          <div class="text-center mt-3">
-            <a href="https://www.instagram.com/cavi.media" target="_blank" class="btn-vapor btn-vapor--acid music-cta">
-              <i class="fab fa-instagram me-2"></i> <span data-i18n="music_ig_cta">Follow @cavi.media</span>
-            </a>
+            <div class="panel__cta">
+              <a href="https://www.instagram.com/cavi.media" target="_blank" class="btn btn--ghost" data-i18n="music_ig_cta">Follow @cavi.media</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
-       TRACK ROULETTE
-  ============================================================ -->
-  <section id="song-picker" class="song-picker-section">
-    <div class="container">
-      <p class="section-kicker" data-issue="07">ISSUE #07 — THE JUKEBOX</p>
-      <h2 class="section-title" data-text="Track Roulette" data-i18n="song_title">Track Roulette</h2>
-      <p class="music-tagline" data-i18n="song_tagline">Press SHUFFLE — let the machine pick a track from my playlists 🎲</p>
-
-      <div class="song-picker-box comic-panel tilt-card ink-reveal">
-        <div class="song-display" id="songDisplay">
-          <div class="song-placeholder" id="songPlaceholder">
-            <i class="fas fa-compact-disc song-disc-icon"></i>
-            <p data-i18n="song_placeholder">Ready when you are...</p>
+    <section id="roulette" class="section roulette">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="roulette_eyebrow">07 — Playlist</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="roulette_title">Pick a track</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="roulette_tagline">Let the archive choose for you.</p>
+        <div class="roulette__box reveal" style="--d:.15s">
+          <div class="roulette__display" id="songDisplay">
+            <div class="roulette__placeholder" id="songPlaceholder">
+              <i class="fas fa-compact-disc"></i>
+              <p data-i18n="roulette_placeholder">Ready when you are.</p>
+            </div>
+            <div class="roulette__result" id="songResult" style="display:none">
+              <iframe id="songFrame" src="" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="roulette__track" id="songTrackName"></p>
+              <p class="roulette__playlist" id="songPlaylistName"></p>
+            </div>
           </div>
-          <div class="song-result" id="songResult" style="display: none;">
-            <iframe id="songFrame" src="" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
-            <p class="song-track-name" id="songTrackName"></p>
-            <p class="song-playlist-name" id="songPlaylistName"></p>
-          </div>
-        </div>
-        <div class="text-center mt-3">
-          <button class="btn-vapor shuffle-btn" id="shuffleBtn">
-            <i class="fas fa-shuffle me-2"></i> <span data-i18n="song_shuffle">SHUFFLE</span>
+          <button class="btn btn--primary" id="shuffleBtn">
+            <i class="fas fa-shuffle"></i> <span data-i18n="roulette_btn">Shuffle</span>
           </button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    -->
 
-  <!-- ============================================================
-       CONTACT
-  ============================================================ -->
-  <footer id="contact" class="contact-footer">
-    <div class="container">
-      <p class="section-kicker" data-issue="08">ISSUE #08 — CONTACT</p>
-
-      <div class="row g-4 align-items-stretch">
-        <div class="col-md-6 ink-reveal">
-          <div class="contact-block comic-panel">
-            <h4 class="contact-block__title" data-i18n="contact_title">// CONTACT_ME</h4>
-            <p><a href="mailto:riccardo.fusiello02@gmail.com"><i class="fas fa-envelope me-2"></i> riccardo.fusiello02@gmail.com</a></p>
-            <p><a href="tel:+393895398639"><i class="fas fa-phone me-2"></i> (+39) 389 539 8639</a></p>
+    <section id="contact" class="section section--alt contact">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="contact_eyebrow">08 — Contact</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="contact_title">Say hello</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="contact_lead">If you have a project in mind, a question, or just want to compare notes, I'd like to hear from you.</p>
+        <div class="contact__grid">
+          <div class="contact-card reveal" style="--d:.15s">
+            <a href="mailto:riccardo.fusiello02@gmail.com" class="contact-card__link">
+              <i class="fas fa-envelope"></i>
+              <span>riccardo.fusiello02@gmail.com</span>
+            </a>
+            <a href="tel:+393895398639" class="contact-card__link">
+              <i class="fas fa-phone"></i>
+              <span>(+39) 389 539 8639</span>
+            </a>
           </div>
-        </div>
-
-        <div class="col-md-6 ink-reveal ink-reveal--right">
-          <div class="connect-block comic-panel">
-            <h4 class="connect-block__title" data-i18n="connect_title">// CONNECT</h4>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/riccardo-fusiello-a02446216/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <div class="contact-card reveal" style="--d:.2s">
+            <h3 class="contact-card__title" data-i18n="connect_title">Elsewhere</h3>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/riccardo-fusiello-a02446216/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
               <a href="https://github.com/riccardofus" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
               <a href="https://www.instagram.com/riccardo.fusiello/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://open.spotify.com/user/11134519888?si=5ef3217eab024590" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
@@ -577,39 +523,40 @@
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-rule"></div>
-      <p class="footer-copy small" data-i18n="copyright">© 2026 Riccardo Fusiello. All Rights Reserved.</p>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span data-i18n="copyright">© 2026 Riccardo Fusiello.</span>
+      <a href="#top" class="footer__top">Back to top <i class="fas fa-arrow-up"></i></a>
     </div>
   </footer>
 
-  <!-- ============================================================
-       MY LISTS — ARCHIVE OVERLAY (above the site)
-  ============================================================ -->
   <div class="lists-overlay" id="listsOverlay" aria-hidden="true">
     <div class="lists-overlay__backdrop" data-close-lists></div>
-    <div class="lists-overlay__frame comic-panel" role="dialog" aria-modal="true" aria-label="My Lists">
-      <button class="comic-modal__close" id="listsClose" aria-label="Close">✕</button>
-      <p class="section-kicker" data-issue="L">THE ARCHIVE</p>
-      <h2 class="section-title" data-text="My Lists" data-i18n="lists_title">My Lists</h2>
-      <p class="section-intro" data-i18n="lists_tagline">Books, films and albums I keep track of.</p>
-
+    <div class="lists-overlay__frame" role="dialog" aria-modal="true" aria-label="My Lists">
+      <button class="lists-close" id="listsClose" aria-label="Close">✕</button>
+      <div class="lists-head">
+        <p class="eyebrow" data-i18n="nav_lists">Lists</p>
+        <h2 class="section-title" data-i18n="lists_title">My Lists</h2>
+        <p class="section-lead" data-i18n="lists_tagline">Books, films and albums worth remembering.</p>
+      </div>
       <div class="lists-controls">
-        <div class="music-tabs lists-tabs" id="listsTabs"></div>
+        <div class="lists-tabs" id="listsTabs"></div>
         <label class="lists-search">
           <i class="fas fa-search"></i>
-          <input type="search" id="listsSearch" data-i18n-ph="lists_filter" placeholder="Filter the archive...">
+          <input type="search" id="listsSearch" data-i18n-ph="lists_filter" placeholder="Filter...">
         </label>
       </div>
-
       <div class="lists-table-wrap">
-        <div class="lists-empty" id="listsEmpty" data-i18n="lists_loading">Loading the archive...</div>
+        <div class="lists-empty" id="listsEmpty" data-i18n="lists_loading">Loading...</div>
         <table class="lists-table" id="listsTable" hidden>
           <thead>
             <tr>
-              <th data-key="title" data-i18n="lists_col_title">TITLE</th>
-              <th data-key="year" data-i18n="lists_col_year">YEAR</th>
-              <th data-key="artist" data-i18n="lists_col_artist">ARTIST</th>
+              <th data-key="title" data-i18n="lists_col_title">Title</th>
+              <th data-key="year" data-i18n="lists_col_year">Year</th>
+              <th data-key="artist" data-i18n="lists_col_artist">Artist</th>
             </tr>
           </thead>
           <tbody id="listsBody"></tbody>
@@ -619,219 +566,50 @@
     </div>
   </div>
 
-  <!-- Comic panel modal (breaking the frame) -->
-  <div class="comic-modal" id="comicModal" aria-hidden="true">
-    <div class="comic-modal__backdrop"></div>
-    <div class="comic-modal__frame comic-panel" role="dialog" aria-modal="true">
-      <button class="comic-modal__close" aria-label="Close">✕</button>
-      <span class="comic-modal__tag">CHRONICLE FILE</span>
-      <h3 class="comic-modal__title"></h3>
-      <p class="comic-modal__quote"></p>
-      <p class="comic-modal__desc"></p>
-    </div>
-  </div>
-
-  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-  <!-- ============================================================
-       APP SCRIPT
-  ============================================================ -->
   <script>
-    /* global preferences */
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const isTouchDevice = window.matchMedia('(hover: none), (pointer: coarse)').matches;
 
-    /* ============================================================
-       1. LOADING SCREEN — INK SPLASH REVEAL
-    ============================================================ */
     const loadingBar = document.getElementById('loadingBarFill');
     const loadingScreen = document.getElementById('loadingScreen');
-    const inkSplash = document.getElementById('inkSplash');
     let progress = 0;
     const loadingInterval = setInterval(() => {
-      progress += Math.random() * 16 + 6;
+      progress += Math.random() * 18 + 8;
       if (progress >= 100) {
         progress = 100;
         clearInterval(loadingInterval);
         loadingBar.style.width = '100%';
         setTimeout(() => {
-          loadingScreen.classList.add('hidden');
+          loadingScreen.classList.add('is-hidden');
           document.body.classList.add('is-loaded');
-          setTimeout(() => { loadingScreen.style.display = 'none'; }, 800);
-        }, 350);
+          setTimeout(() => { loadingScreen.style.display = 'none'; }, 700);
+        }, 250);
         return;
       }
       loadingBar.style.width = progress + '%';
-    }, 180);
+    }, 160);
 
-    /* ============================================================
-       2. CUSTOM INKED CURSOR
-    ============================================================ */
-    const cursor = document.getElementById('cursor');
-    const inkTrail = document.getElementById('inkTrail');
-    let cursorX = window.innerWidth / 2;
-    let cursorY = window.innerHeight / 2;
-    let ringX = cursorX;
-    let ringY = cursorY;
-    let lastBlot = 0;
-
-    function initCursor() {
-      if (isTouchDevice || !cursor) { if (cursor) cursor.style.display = 'none'; return; }
-      document.body.classList.add('has-custom-cursor');
-
-      window.addEventListener('mousemove', (e) => {
-        cursorX = e.clientX;
-        cursorY = e.clientY;
-        cursor.style.setProperty('--px', cursorX + 'px');
-        cursor.style.setProperty('--py', cursorY + 'px');
-
-        const now = performance.now();
-        if (!prefersReducedMotion && now - lastBlot > 55) {
-          lastBlot = now;
-          const blot = document.createElement('span');
-          blot.className = 'ink-blot';
-          const size = 4 + Math.random() * 8;
-          blot.style.width = size + 'px';
-          blot.style.height = size + 'px';
-          blot.style.left = cursorX + 'px';
-          blot.style.top = cursorY + 'px';
-          inkTrail.appendChild(blot);
-          setTimeout(() => blot.remove(), 700);
-        }
-      });
-
-      const interactive = document.querySelectorAll('a, button, .tilt-card, .skill-badge, .chronicle, input, textarea');
-      interactive.forEach((el) => {
-        el.addEventListener('mouseenter', () => cursor.classList.add('cursor--active'));
-        el.addEventListener('mouseleave', () => cursor.classList.remove('cursor--active'));
-      });
-
-      (function follow() {
-        ringX += (cursorX - ringX) * 0.18;
-        ringY += (cursorY - ringY) * 0.18;
-        cursor.style.setProperty('--rx', ringX + 'px');
-        cursor.style.setProperty('--ry', ringY + 'px');
-        requestAnimationFrame(follow);
-      })();
-    }
-
-    /* ============================================================
-       4. SCROLL PROGRESS + SPEED LINES
-    ============================================================ */
     const progressFill = document.getElementById('scrollProgressFill');
-    const speedLines = document.getElementById('speedLines');
-    let lastScrollY = window.scrollY;
-    let speedTimer = null;
-
     function updateScrollProgress() {
       const doc = document.documentElement;
       const max = doc.scrollHeight - doc.clientHeight;
-      const pct = max > 0 ? (doc.scrollTop / max) * 100 : 0;
-      if (progressFill) progressFill.style.width = pct + '%';
+      progressFill.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + '%';
     }
-
-    function onScroll() {
-      const y = window.scrollY;
-      const velocity = Math.abs(y - lastScrollY);
-      lastScrollY = y;
-      updateScrollProgress();
-
-      if (!prefersReducedMotion && speedLines && velocity > 35) {
-        speedLines.classList.add('is-active');
-        clearTimeout(speedTimer);
-        speedTimer = setTimeout(() => speedLines.classList.remove('is-active'), 220);
-      }
-      applyHeroParallax(y);
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scroll', updateScrollProgress, { passive: true });
     window.addEventListener('resize', updateScrollProgress);
     updateScrollProgress();
 
-    /* ============================================================
-       5. HERO PARALLAX (scroll + mouse depth)
-    ============================================================ */
-    const hero = document.getElementById('hero');
-    function applyHeroParallax(scrollY) {
-      if (!hero || prefersReducedMotion) return;
-      const y = scrollY || window.scrollY;
-      hero.querySelectorAll('[data-depth]').forEach((layer) => {
-        const d = parseFloat(layer.dataset.depth) || 0;
-        layer.style.setProperty('--parallax-y', (y * d) + 'px');
-      });
-      hero.style.setProperty('--city-y', (y * 0.12) + 'px');
-      hero.style.setProperty('--smoke-y', (y * 0.08) + 'px');
-    }
-
-    if (hero && !isTouchDevice && !prefersReducedMotion) {
-      hero.addEventListener('mousemove', (e) => {
-        const r = hero.getBoundingClientRect();
-        const mx = ((e.clientX - r.left) / r.width - 0.5) * 2;
-        const my = ((e.clientY - r.top) / r.height - 0.5) * 2;
-        hero.querySelectorAll('[data-depth]').forEach((layer) => {
-          const d = parseFloat(layer.dataset.depth) || 0;
-          layer.style.setProperty('--parallax-x', (mx * d * 90).toFixed(1) + 'px');
-          layer.style.setProperty('--parallax-my', (my * d * 70).toFixed(1) + 'px');
-        });
-      });
-      hero.addEventListener('mouseleave', () => {
-        hero.querySelectorAll('[data-depth]').forEach((layer) => {
-          layer.style.setProperty('--parallax-x', '0px');
-          layer.style.setProperty('--parallax-my', '0px');
-        });
-      });
-    }
-
-    /* ============================================================
-       6. HERO FLOATING PARTICLES (embers / ink specks)
-    ============================================================ */
-    const heroParticles = document.getElementById('heroParticles');
-    if (heroParticles && !prefersReducedMotion) {
-      const count = window.innerWidth < 768 ? 12 : 26;
-      for (let i = 0; i < count; i++) {
-        const p = document.createElement('span');
-        p.className = 'hero-particle' + (Math.random() > 0.65 ? ' blood' : '');
-        p.style.left = (Math.random() * 100).toFixed(2) + '%';
-        p.style.animationDuration = (6 + Math.random() * 9).toFixed(1) + 's';
-        p.style.animationDelay = (Math.random() * 9).toFixed(1) + 's';
-        const size = (1.5 + Math.random() * 3).toFixed(1);
-        p.style.width = size + 'px';
-        p.style.height = size + 'px';
-        heroParticles.appendChild(p);
-      }
-    }
-
-    /* ============================================================
-       7. SCROLL REVEAL (ink panels)
-    ============================================================ */
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add('is-visible');
           revealObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-    document.querySelectorAll('.ink-reveal').forEach((el) => revealObserver.observe(el));
-
-    /* Skill badges pop-in */
-    const skillsSection = document.querySelector('.skills-section');
-    if (skillsSection) {
-      const badgeObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-badges');
-            badgeObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2 });
-      badgeObserver.observe(skillsSection);
-    }
-
-    /* ============================================================
-       8. SMOOTH SCROLL
-    ============================================================ */
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener('click', function (e) {
         const target = document.querySelector(this.getAttribute('href'));
@@ -842,162 +620,41 @@
       });
     });
 
-    /* ============================================================
-       9. NAV TOGGLER
-    ============================================================ */
-    const vaporToggler = document.querySelector('.vapor-toggler');
+    const navToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.getElementById('navbarNav');
-    if (vaporToggler && navbarCollapse) {
-      vaporToggler.addEventListener('click', function () {
-        setTimeout(() => {
-          const isOpen = navbarCollapse.classList.contains('show');
-          vaporToggler.classList.toggle('active', isOpen);
-        }, 10);
+    if (navToggler && navbarCollapse) {
+      navToggler.addEventListener('click', () => {
+        setTimeout(() => navToggler.classList.toggle('is-open', navbarCollapse.classList.contains('show')), 10);
       });
       navbarCollapse.querySelectorAll('.nav-link').forEach((link) => {
-        link.addEventListener('click', () => vaporToggler.classList.remove('active'));
+        link.addEventListener('click', () => navToggler.classList.remove('is-open'));
       });
     }
 
-    /* ============================================================
-       10. 3D TILT + SPOTLIGHT
-    ============================================================ */
-    function initTiltCards() {
-      if (isTouchDevice || prefersReducedMotion) return;
-      document.querySelectorAll('.tilt-card').forEach((card) => {
-        if (!card.querySelector('.card-spotlight')) {
-          const glow = document.createElement('span');
-          glow.className = 'card-spotlight';
-          card.insertBefore(glow, card.firstChild);
-        }
-        const maxTilt = 7;
-        card.addEventListener('mouseenter', () => card.classList.add('is-tilting'));
-        card.addEventListener('mousemove', (e) => {
-          const r = card.getBoundingClientRect();
-          const px = (e.clientX - r.left) / r.width;
-          const py = (e.clientY - r.top) / r.height;
-          card.style.setProperty('--tilt-rx', ((0.5 - py) * maxTilt).toFixed(2) + 'deg');
-          card.style.setProperty('--tilt-ry', ((px - 0.5) * maxTilt).toFixed(2) + 'deg');
-          card.style.setProperty('--mx', (px * 100).toFixed(1) + '%');
-          card.style.setProperty('--my', (py * 100).toFixed(1) + '%');
-        });
-        card.addEventListener('mouseleave', () => {
-          card.classList.remove('is-tilting');
-          card.style.setProperty('--tilt-rx', '0deg');
-          card.style.setProperty('--tilt-ry', '0deg');
-        });
-      });
-    }
-
-    /* ============================================================
-       11. MAGNETIC BUTTONS
-    ============================================================ */
-    function initMagnetic() {
-      if (isTouchDevice || prefersReducedMotion) return;
-      document.querySelectorAll('.btn-vapor, .shuffle-btn, .music-tab, .lang-toggle').forEach((btn) => {
-        btn.classList.add('magnetic');
-        btn.addEventListener('mousemove', (e) => {
-          const r = btn.getBoundingClientRect();
-          const x = (e.clientX - (r.left + r.width / 2)) * 0.22;
-          const y = (e.clientY - (r.top + r.height / 2)) * 0.22;
-          btn.style.transform = 'translate(' + x.toFixed(1) + 'px, ' + y.toFixed(1) + 'px)';
-        });
-        btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
-      });
-    }
-
-    /* ============================================================
-       12. HERO TYPEWRITER (language-aware)
-    ============================================================ */
-    const heroTypedPhrases = {
-      en: [
-        'AI Student & Software Developer',
-        'Building intelligent systems',
-        'Software Engineer & DJ',
-        'Turning research into products'
-      ],
-      it: [
-        'Studente AI & Sviluppatore Software',
-        'Costruisco sistemi intelligenti',
-        'Software Engineer & DJ',
-        'Trasformo la ricerca in prodotti'
-      ]
-    };
-    let heroTypeTimer = null;
-
-    function startHeroTyping(lang) {
-      const el = document.getElementById('heroTyped');
-      if (!el) return;
-      clearTimeout(heroTypeTimer);
-      const phrases = heroTypedPhrases[lang] || heroTypedPhrases.en;
-
-      if (prefersReducedMotion) { el.textContent = phrases[0]; return; }
-
-      let phraseIndex = 0;
-      let charIndex = 0;
-      let deleting = false;
-
-      function tick() {
-        const current = phrases[phraseIndex];
-        if (!deleting) {
-          charIndex++;
-          el.textContent = current.slice(0, charIndex);
-          if (charIndex >= current.length) {
-            deleting = true;
-            heroTypeTimer = setTimeout(tick, 1800);
-            return;
-          }
-          heroTypeTimer = setTimeout(tick, 70);
-        } else {
-          charIndex--;
-          el.textContent = current.slice(0, charIndex);
-          if (charIndex <= 0) {
-            deleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            heroTypeTimer = setTimeout(tick, 400);
-            return;
-          }
-          heroTypeTimer = setTimeout(tick, 35);
-        }
-      }
-      el.textContent = '';
-      heroTypeTimer = setTimeout(tick, 500);
-    }
-
-    /* ============================================================
-       13. MUSIC TABS
-    ============================================================ */
-    const musicTabs = document.querySelectorAll('.music-tab');
-    const musicPanels = document.querySelectorAll('.music-panel');
-    musicTabs.forEach((tab) => {
+    const musicEnabled = document.getElementById('music') || document.getElementById('roulette');
+    if (musicEnabled) {
+    document.querySelectorAll('.tab').forEach((tab) => {
       tab.addEventListener('click', () => {
-        const target = tab.getAttribute('data-tab');
-        musicTabs.forEach((t) => t.classList.remove('active'));
-        tab.classList.add('active');
-        musicPanels.forEach((p) => {
-          p.classList.remove('active');
-          if (p.id === 'panel-' + target) p.classList.add('active');
+        const target = tab.dataset.tab;
+        document.querySelectorAll('.tab').forEach((t) => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        document.querySelectorAll('.panel').forEach((p) => {
+          p.classList.toggle('is-active', p.id === 'panel-' + target);
         });
       });
     });
 
-    /* Generic [data-href] click navigation */
     document.querySelectorAll('[data-href]').forEach((el) => {
-      el.addEventListener('click', () => window.open(el.getAttribute('data-href'), '_blank'));
+      el.addEventListener('click', () => window.open(el.dataset.href, '_blank'));
     });
 
-    /* ============================================================
-       14. SONG ROULETTE
-    ============================================================ */
     let songDatabase = [];
     let songsLoaded = false;
-
     fetch('spotify_tracks.json')
       .then((r) => r.json())
       .then((data) => {
         songDatabase = data.t.map((t) => ({ id: t[0], playlist: t[1] }));
         songsLoaded = true;
-        console.log('Loaded ' + songDatabase.length + ' tracks');
       })
       .catch((err) => console.warn('Could not load spotify_tracks.json:', err));
 
@@ -1012,8 +669,8 @@
     if (shuffleBtn) {
       shuffleBtn.addEventListener('click', () => {
         if (!songsLoaded || songDatabase.length === 0) {
-          songTrackName.textContent = 'Loading tracks... please wait';
-          songPlaylistName.textContent = '';
+          songTrackName.textContent = '';
+          songPlaylistName.textContent = 'Loading tracks...';
           songPlaceholder.style.display = 'none';
           songResult.style.display = 'block';
           return;
@@ -1023,52 +680,20 @@
         while (idx === lastTrackIndex && songDatabase.length > 1);
         lastTrackIndex = idx;
         const track = songDatabase[idx];
-
-        shuffleBtn.classList.add('spinning');
+        shuffleBtn.classList.add('is-spinning');
         songPlaceholder.style.display = 'none';
         songResult.style.display = 'none';
-
         setTimeout(() => {
           songFrame.src = 'https://open.spotify.com/embed/track/' + track.id;
           songTrackName.textContent = '';
-          songPlaylistName.textContent = '♫ from: ' + track.playlist;
+          songPlaylistName.textContent = 'From: ' + track.playlist;
           songResult.style.display = 'block';
-          shuffleBtn.classList.remove('spinning');
-        }, 600);
+          shuffleBtn.classList.remove('is-spinning');
+        }, 450);
       });
     }
-
-    /* ============================================================
-       15. COMIC MODAL — BREAKING THE FRAME
-    ============================================================ */
-    const modal = document.getElementById('comicModal');
-    function openComicModal(card) {
-      if (!modal) return;
-      modal.querySelector('.comic-modal__title').textContent = card.dataset.title || '';
-      modal.querySelector('.comic-modal__quote').textContent = card.dataset.quote || '';
-      const descKey = card.dataset.i18nDesc;
-      const descEl = card.querySelector('.chronicle__desc');
-      modal.querySelector('.comic-modal__desc').textContent = descEl ? descEl.textContent : '';
-      modal.classList.add('is-open');
-      modal.setAttribute('aria-hidden', 'false');
-    }
-    function closeComicModal() {
-      if (!modal) return;
-      modal.classList.remove('is-open');
-      modal.setAttribute('aria-hidden', 'true');
-    }
-    document.querySelectorAll('.chronicle').forEach((card) => {
-      card.addEventListener('click', () => openComicModal(card));
-    });
-    if (modal) {
-      modal.querySelector('.comic-modal__backdrop').addEventListener('click', closeComicModal);
-      modal.querySelector('.comic-modal__close').addEventListener('click', closeComicModal);
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeComicModal(); });
     }
 
-    /* ============================================================
-       16. MY LISTS — CSV ARCHIVE OVERLAY
-    ============================================================ */
     const listsOverlay = document.getElementById('listsOverlay');
     const listsTabsEl = document.getElementById('listsTabs');
     const listsTable = document.getElementById('listsTable');
@@ -1083,6 +708,7 @@
     let listsActive = 0;
     let listsSortKey = 'year';
     let listsSortDir = -1;
+    let listsScrollY = 0;
 
     function t(key) {
       return (translations[currentLang] && translations[currentLang][key]) || '';
@@ -1184,14 +810,14 @@
       listsData.forEach((list, i) => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'music-tab' + (i === listsActive ? ' active' : '');
+        btn.className = 'lists-tab' + (i === listsActive ? ' is-active' : '');
         btn.textContent = list.label;
         btn.addEventListener('click', () => { listsActive = i; renderLists(); });
         listsTabsEl.appendChild(btn);
       });
 
       listsTable.querySelectorAll('thead th').forEach((th) => {
-        th.classList.toggle('sorted', th.dataset.key === listsSortKey);
+        th.classList.toggle('is-sorted', th.dataset.key === listsSortKey);
       });
 
       const list = listsData[listsActive] || { items: [] };
@@ -1229,15 +855,13 @@
       listsSearch.setAttribute('placeholder', t('lists_filter'));
     }
 
-    let listsScrollY = 0;
-
     function openLists() {
       if (!listsOverlay) return;
       listsScrollY = window.scrollY || window.pageYOffset || 0;
       listsOverlay.classList.add('is-open');
       listsOverlay.setAttribute('aria-hidden', 'false');
-      document.documentElement.classList.add('lists-open');
-      document.body.classList.add('lists-open');
+      document.documentElement.classList.add('is-locked');
+      document.body.classList.add('is-locked');
       document.body.style.top = (-listsScrollY) + 'px';
       loadLists();
       if (listsLoaded) renderLists();
@@ -1247,8 +871,8 @@
       if (!listsOverlay) return;
       listsOverlay.classList.remove('is-open');
       listsOverlay.setAttribute('aria-hidden', 'true');
-      document.documentElement.classList.remove('lists-open');
-      document.body.classList.remove('lists-open');
+      document.documentElement.classList.remove('is-locked');
+      document.body.classList.remove('is-locked');
       document.body.style.top = '';
       window.scrollTo(0, listsScrollY);
     }
@@ -1272,181 +896,272 @@
       });
     });
 
-    /* ============================================================
-       17. MULTILINGUAL SYSTEM (EN / IT)
-    ============================================================ */
     const translations = {
       en: {
-        nav_about: '// About',
-        nav_skills: '// Skills',
-        nav_experience: '// Experience',
-        nav_education: '// Education',
-        nav_projects: '// Projects',
-        nav_lists: '// Lists',
-        nav_music: '// Music',
-        nav_contact: '// Contact',
-        hero_kicker: 'A CAVI PRODUCTION · ISSUE #01',
-        hero_subtitle: 'AI Student & Software Developer',
-        hero_cv: 'DOWNLOAD_CV.exe',
-        hero_contact: 'CONTACT.bat',
-        profile_hello: 'Hello!',
-        profile_intro: 'I am a <strong>Software Developer</strong> and <strong>AI Student</strong> based in Andria, Italy.',
-        profile_detail: 'Currently enrolled in the Master\'s Degree in <strong>Artificial Intelligence</strong> at the <a href="https://www.uniba.it/it" target="_blank">University of Bari</a>. I previously graduated in Computer Science from the <a href="https://www.unitn.it/en" target="_blank">University of Trento</a>.',
-        about_title: 'About Me',
-        about_win_title: 'about_me.txt',
-        about_p1: 'I don\'t just write code — I architect intelligent systems. My sweet spot is where software engineering meets artificial intelligence: taking complex research and turning it into products that actually work. Precision, curiosity, and a relentless drive to build define my approach.',
-        about_p2: 'Beyond the code, music is my way of life. Born in 2002 and surrounded by music-loving parents, I am a passionate <strong>DJ</strong>. Whether I\'m training a Machine Learning model or mixing a set, I\'m driven by creativity and the desire to create something unique.',
-        skills_title: 'Technical Skills',
-        skills_languages: '// LANGUAGES',
-        skills_frameworks: '// FRAMEWORKS & TOOLS',
-        experience_title: 'Working Experience',
+        nav_about: 'About',
+        nav_experience: 'Experience',
+        nav_work: 'Work',
+        nav_lists: 'Lists',
+        nav_music: 'Music',
+        nav_contact: 'Contact',
+        hero_eyebrow: 'Portfolio — 2026',
+        hero_lead: 'I\'m a software developer and AI student from southern Italy. I like turning messy problems into simple tools — and I\'m happiest when something I built quietly does its job.',
+        hero_cv: 'Download CV',
+        hero_contact: 'Get in touch',
+        hero_location: 'Andria, Italy',
+        hero_status: 'Open to opportunities',
+        about_eyebrow: '01 — About',
+        about_title: 'A bit about me',
+        about_p1: 'I\'m Riccardo. I write software, study artificial intelligence, and spend a lot of time wondering how things fit together. My work sits between engineering and research: building the practical parts, then figuring out what\'s really going on underneath.',
+        about_p2: 'I studied computer science in Trento and I\'m now finishing a master\'s in AI in Bari. Away from the screen I\'m usually listening to records, mixing a set, or chasing the next thing to learn. I like curious people, and I try to be one.',
+        fact_location_label: 'Based in',
+        fact_location: 'Andria, Italy',
+        fact_education_label: 'Studying',
+        fact_education: 'MSc Artificial Intelligence, University of Bari',
+        fact_focus_label: 'Working on',
+        fact_focus: 'Software, machine learning, and the space between',
+        skills_eyebrow: '02 — Toolkit',
+        skills_title: 'What I work with',
+        skills_languages: 'Languages',
+        skills_frameworks: 'Frameworks & tools',
+        exp_eyebrow: '03 — Experience',
+        exp_title: 'Where I\'ve worked',
         job1_title: 'Software Developer',
-        job1_desc: 'Development of software solutions and system integration.',
+        job1_desc: 'Software solutions and system integration for business clients.',
         job2_title: 'Freelance Developer',
         job2_company: 'Self-employed',
-        job2_desc: 'Automation of psychological tests using Google Suite scripting.',
+        job2_desc: 'Automating psychological assessments with Google Workspace scripting.',
         job3_title: 'Machine Learning Intern',
-        job3_desc: 'Research and implementation of ML models for academic projects.',
+        job3_desc: 'Research and implementation of machine learning models for academic projects.',
         job4_title: 'IT Service Desk',
-        job4_desc: 'Technical support and hardware/software troubleshooting for students and staff.',
+        job4_desc: 'Technical support and troubleshooting for students and staff.',
         job5_title: 'Full Stack Developer',
         job5_company: 'Reply S.p.A, Remote',
-        job5_desc: 'Short-term intense development project.',
+        job5_desc: 'A short, intense development project.',
         job6_title: 'Full Stack Developer',
-        job6_company: 'Nuvité S.r.l, Andria',
-        job6_desc: 'Web development and database management.',
-        education_title: 'Education & Certifications',
+        job6_company: 'Nuvité S.r.L, Andria',
+        job6_desc: 'Web development and database work.',
+        edu_eyebrow: '04 — Education',
+        edu_title: 'Where I studied',
         edu_present: 'Present',
-        edu_master_title: "Master's in AI",
+        edu_master_title: 'MSc in Artificial Intelligence',
         edu_master_uni: 'University of Bari',
-        edu_master_desc: 'Focus on Machine Learning, Deep Learning, and Data Science.',
-        edu_bachelor_title: "Bachelor's in CS",
+        edu_master_desc: 'Machine learning, deep learning and data science.',
+        edu_bachelor_title: 'BSc in Computer Science',
         edu_bachelor_uni: 'University of Trento',
-        edu_bachelor_desc: 'Grade: 106/110. Thesis focused on software architecture.',
+        edu_bachelor_desc: 'Graduated 106/110. Thesis on software architecture.',
         edu_diploma_title: 'Diploma in IT',
         edu_diploma_school: 'ITIS Sen. Onofrio Jannuzzi',
-        edu_diploma_desc: 'Grade: 100L/100.',
-        cert_title: '// CERTIFICATIONS',
-        projects_title: 'Projects',
-        project_win_title: 'shelfy_project.exe',
-        project_quote: '"Digital library at your fingertips."',
-        project_desc: 'A personal project focusing on digital book management, allowing users to organize and track their reading collections efficiently.',
+        edu_diploma_desc: 'Graduated 100/100 with honours.',
+        cert_title: 'Certifications',
+        work_eyebrow: '05 — What I build',
+        work_title: 'Things I build',
+        work_intro: 'Most of my work sits in four places: Odoo implementations, music tools, data and automations, and AI experiments.',
+        odoo_title: 'Odoo ERP',
+        odoo_desc: 'I\'ve worked on several Odoo implementations for companies in different sectors. Custom modules, data migrations, integrations and process changes — the details belong to the client, but the goal is always the same: make the system fit the way the business actually works.',
+        odoo_tag1: 'Custom modules',
+        odoo_tag2: 'Data migration',
+        odoo_tag3: 'Integrations',
+        odoo_tag4: 'Process design',
+        musicwork_title: 'Music & audio',
+        musicwork1_name: 'Spotify Downloader',
+        musicwork1_desc: 'An Angular + Node app for downloading tracks, albums and playlists, with live progress, logs and rate limiting.',
+        musicwork2_name: 'DJ Preview',
+        musicwork2_desc: 'Downloads a DJ set from YouTube, finds the transitions and cuts a one-minute preview around each one.',
+        musicwork3_name: 'Discogs to Preview',
+        musicwork3_desc: 'An LLM reads Discogs listings, finds the matching previews on YouTube and plays them.',
+        datawork_title: 'Data & automation',
+        datawork1_name: 'Expense report',
+        datawork1_desc: 'Reads a bank statement in ODS, calculates the KPIs and generates a standalone HTML report with charts and CSVs.',
+        datawork2_name: 'Facebook leads → Odoo',
+        datawork2_desc: 'A daily sync that turns Facebook Lead Ads into CRM opportunities, without manual exports.',
+        datawork3_name: 'Label printing',
+        datawork3_desc: 'Sends ZPL labels directly to Honeywell printers over the network or serial port.',
+        datawork4_name: 'Docs to Markdown',
+        datawork4_desc: 'Crawls a documentation site and turns the whole tree into a single Markdown file.',
+        aiwork_title: 'AI projects',
+        aiwork1_name: 'Gen Z Wellness Predictor',
+        aiwork1_desc: 'A machine learning pipeline that predicts mental health indicators from lifestyle and biometric data, comparing ensembles and neural networks.',
+        aiwork2_name: 'Handwritten Digit Recognition',
+        aiwork2_desc: 'A CNN served by Flask with an Angular canvas for real-time digit recognition.',
+        aiwork3_name: 'Face Clustering',
+        aiwork3_desc: 'Detects faces in a photo archive and groups them by person using embeddings and DBSCAN.',
+        aiwork4_name: 'AI Image Enhancer',
+        aiwork4_desc: 'A command-line upscaler built on Real-ESRGAN, with GPU support and tiling for small cards.',
+        aiwork5_name: 'Agentic Orchestration',
+        aiwork5_desc: 'A small, readable pipeline where research, writing and review agents hand work to each other.',
+        project_title: 'Shelfy',
+        project_desc: 'A small library app for the books I own and lend. It began as a fix for my own shelf and ended up teaching me how much work goes into keeping something simple.',
+        project_cta: 'Read more',
+        project_quote: 'A quiet place for the books you actually own.',
+        modal_tag: 'Project',
+        music_eyebrow: '06 — Sound',
         music_title: 'cavi.wav',
-        music_tagline: 'Sharing good vibes through music 🎶✨',
-        music_tab_spotify: '// SPOTIFY',
-        music_tab_youtube: '// YOUTUBE',
-        music_tab_instagram: '// INSTAGRAM',
+        music_tagline: 'Records, mixes and late-night discoveries.',
+        music_tab_spotify: 'Spotify',
+        music_tab_youtube: 'YouTube',
+        music_tab_instagram: 'Instagram',
         music_spotify_cta: 'Open all 47 playlists',
-        music_yt_visit: 'Visit Channel',
-        music_yt_desc: 'DJ sets, mixes & music content',
+        music_yt_visit: 'Visit channel',
+        music_yt_desc: 'DJ sets, mixes and music',
         music_yt_cta: 'Subscribe on YouTube',
         music_ig_desc: 'Music · DJ · Vibes',
-        music_ig_visit: 'View Profile',
+        music_ig_visit: 'View profile',
         music_ig_cta: 'Follow @cavi.media',
-        song_title: 'Track Roulette',
-        song_tagline: 'Press SHUFFLE — let the machine pick a track from my playlists 🎲',
-        song_placeholder: 'Ready when you are...',
-        song_shuffle: 'SHUFFLE',
-        contact_title: '// CONTACT_ME',
-        connect_title: '// CONNECT',
+        roulette_eyebrow: '07 — Playlist',
+        roulette_title: 'Pick a track',
+        roulette_tagline: 'Let the archive choose for you.',
+        roulette_placeholder: 'Ready when you are.',
+        roulette_btn: 'Shuffle',
+        contact_eyebrow: '06 — Contact',
+        contact_title: 'Say hello',
+        contact_lead: 'If you have a project in mind, a question, or just want to compare notes, I\'d like to hear from you.',
+        connect_title: 'Elsewhere',
         lists_title: 'My Lists',
-        lists_tagline: 'Books, films and albums I keep track of.',
-        lists_col_title: 'TITLE',
-        lists_col_year: 'YEAR',
-        lists_col_artist: 'ARTIST',
-        lists_filter: 'Filter the archive...',
-        lists_loading: 'Loading the archive...',
-        lists_empty: 'No entries found.',
-        lists_error: 'Could not load the lists/ folder — serve the site over HTTP.',
+        lists_tagline: 'Books, films and albums worth remembering.',
+        lists_col_title: 'Title',
+        lists_col_year: 'Year',
+        lists_col_artist: 'Artist',
+        lists_filter: 'Filter...',
+        lists_loading: 'Loading...',
+        lists_empty: 'Nothing here yet.',
+        lists_error: 'Could not load lists/ — serve the site over HTTP.',
         lists_count: '{n} entries',
-        copyright: '© 2026 Riccardo Fusiello. All Rights Reserved.',
-        loading_text: 'PRINTING ISSUE #01...'
+        copyright: '© 2026 Riccardo Fusiello.',
+        loading_text: 'Loading'
       },
       it: {
-        nav_about: '// Chi Sono',
-        nav_skills: '// Competenze',
-        nav_experience: '// Esperienza',
-        nav_education: '// Formazione',
-        nav_projects: '// Progetti',
-        nav_lists: '// Liste',
-        nav_music: '// Musica',
-        nav_contact: '// Contatti',
-        hero_kicker: 'UNA PRODUZIONE CAVI · NUMERO #01',
-        hero_subtitle: 'Studente AI & Sviluppatore Software',
-        hero_cv: 'SCARICA_CV.exe',
-        hero_contact: 'CONTATTAMI.bat',
-        profile_hello: 'Ciao!',
-        profile_intro: 'Sono uno <strong>Sviluppatore Software</strong> e <strong>Studente di AI</strong> con sede ad Andria, Italia.',
-        profile_detail: 'Attualmente iscritto alla Laurea Magistrale in <strong>Intelligenza Artificiale</strong> presso l\'<a href="https://www.uniba.it/it" target="_blank">Università degli Studi di Bari</a>. Precedentemente mi sono laureato in Informatica presso l\'<a href="https://www.unitn.it/en" target="_blank">Università di Trento</a>.',
-        about_title: 'Chi Sono',
-        about_win_title: 'chi_sono.txt',
-        about_p1: 'Non scrivo solo codice — progetto sistemi intelligenti. Il mio punto di forza è l\'intersezione tra ingegneria del software e intelligenza artificiale: trasformare ricerca complessa in prodotti che funzionano davvero. Precisione, curiosità e una spinta incessante a costruire definiscono il mio approccio.',
-        about_p2: 'Oltre il codice, la musica è il mio stile di vita. Nato nel 2002 e circondato da genitori amanti della musica, sono un <strong>DJ</strong> appassionato. Che io stia addestrando un modello di Machine Learning o mixando un set, sono guidato dalla creatività e dal desiderio di creare qualcosa di unico.',
-        skills_title: 'Competenze Tecniche',
-        skills_languages: '// LINGUAGGI',
-        skills_frameworks: '// FRAMEWORK & STRUMENTI',
-        experience_title: 'Esperienza Lavorativa',
+        nav_about: 'Chi sono',
+        nav_experience: 'Esperienza',
+        nav_work: 'Lavori',
+        nav_lists: 'Liste',
+        nav_music: 'Musica',
+        nav_contact: 'Contatti',
+        hero_eyebrow: 'Portfolio — 2026',
+        hero_lead: 'Sono uno sviluppatore software e studente di intelligenza artificiale. Mi piace trasformare problemi complicati in strumenti semplici — e sono più soddisfatto quando qualcosa che ho costruito fa il suo lavoro senza farsi notare.',
+        hero_cv: 'Scarica il CV',
+        hero_contact: 'Scrivimi',
+        hero_location: 'Andria, Italia',
+        hero_status: 'Aperto a nuove opportunità',
+        about_eyebrow: '01 — Chi sono',
+        about_title: 'Qualcosa su di me',
+        about_p1: 'Sono Riccardo. Scrivo software, studio intelligenza artificiale e passo molto tempo a chiedermi come stanno insieme le cose. Il mio lavoro sta tra ingegneria e ricerca: costruisco la parte pratica, poi cerco di capire cosa succede davvero sotto.',
+        about_p2: 'Ho studiato informatica a Trento e ora sto finendo la magistrale in AI a Bari. Fuori dallo schermo ascolto dischi, mixo set o inseguo la prossima cosa da imparare. Mi piacciono le persone curiose, e provo a esserlo anch\'io.',
+        fact_location_label: 'Dove',
+        fact_location: 'Andria, Italia',
+        fact_education_label: 'Studio',
+        fact_education: 'Magistrale in Intelligenza Artificiale, Università di Bari',
+        fact_focus_label: 'Mi occupo di',
+        fact_focus: 'Software, machine learning e lo spazio in mezzo',
+        skills_eyebrow: '02 — Strumenti',
+        skills_title: 'Con cosa lavoro',
+        skills_languages: 'Linguaggi',
+        skills_frameworks: 'Framework e strumenti',
+        exp_eyebrow: '03 — Esperienza',
+        exp_title: 'Dove ho lavorato',
         job1_title: 'Sviluppatore Software',
-        job1_desc: 'Sviluppo di soluzioni software e integrazione di sistemi.',
+        job1_desc: 'Soluzioni software e integrazione di sistemi per aziende.',
         job2_title: 'Sviluppatore Freelance',
         job2_company: 'Lavoro autonomo',
-        job2_desc: 'Automazione di test psicologici utilizzando Google Suite scripting.',
+        job2_desc: 'Automazione di test psicologici con Google Workspace scripting.',
         job3_title: 'Tirocinante Machine Learning',
-        job3_desc: 'Ricerca e implementazione di modelli ML per progetti accademici.',
+        job3_desc: 'Ricerca e implementazione di modelli di machine learning per progetti accademici.',
         job4_title: 'IT Service Desk',
-        job4_desc: 'Supporto tecnico e risoluzione problemi hardware/software per studenti e personale.',
+        job4_desc: 'Supporto tecnico e risoluzione problemi per studenti e personale.',
         job5_title: 'Sviluppatore Full Stack',
         job5_company: 'Reply S.p.A, Remoto',
-        job5_desc: 'Progetto di sviluppo intensivo a breve termine.',
+        job5_desc: 'Un progetto di sviluppo breve e intenso.',
         job6_title: 'Sviluppatore Full Stack',
-        job6_company: 'Nuvité S.r.l, Andria',
+        job6_company: 'Nuvité S.r.L, Andria',
         job6_desc: 'Sviluppo web e gestione database.',
-        education_title: 'Formazione & Certificazioni',
+        edu_eyebrow: '04 — Formazione',
+        edu_title: 'Dove ho studiato',
         edu_present: 'In corso',
-        edu_master_title: 'Laurea Magistrale in AI',
-        edu_master_uni: 'Università degli Studi di Bari',
-        edu_master_desc: 'Focus su Machine Learning, Deep Learning e Data Science.',
-        edu_bachelor_title: 'Laurea Triennale in Informatica',
+        edu_master_title: 'Magistrale in Intelligenza Artificiale',
+        edu_master_uni: 'Università di Bari',
+        edu_master_desc: 'Machine learning, deep learning e data science.',
+        edu_bachelor_title: 'Triennale in Informatica',
         edu_bachelor_uni: 'Università di Trento',
-        edu_bachelor_desc: 'Voto: 106/110. Tesi focalizzata su architettura software.',
+        edu_bachelor_desc: 'Laurea 106/110. Tesi su architettura software.',
         edu_diploma_title: 'Diploma in Informatica',
         edu_diploma_school: 'ITIS Sen. Onofrio Jannuzzi',
-        edu_diploma_desc: 'Voto: 100L/100.',
-        cert_title: '// CERTIFICAZIONI',
-        projects_title: 'Progetti',
-        project_win_title: 'progetto_shelfy.exe',
-        project_quote: '"La tua libreria digitale a portata di mano."',
-        project_desc: 'Un progetto personale focalizzato sulla gestione digitale dei libri, che permette agli utenti di organizzare e tracciare le proprie collezioni di lettura in modo efficiente.',
+        edu_diploma_desc: 'Diploma 100/100 con lode.',
+        cert_title: 'Certificazioni',
+        work_eyebrow: '05 — Cosa costruisco',
+        work_title: 'Cose che costruisco',
+        work_intro: 'La maggior parte del mio lavoro sta in quattro posti: implementazioni Odoo, strumenti per la musica, dati e automazioni, ed esperimenti di intelligenza artificiale.',
+        odoo_title: 'Odoo ERP',
+        odoo_desc: 'Ho lavorato a diverse implementazioni Odoo per aziende di settori diversi. Moduli su misura, migrazioni dati, integrazioni e modifiche ai processi — i dettagli restano del cliente, ma l\'obiettivo è sempre lo stesso: far aderire il sistema a come l\'azienda lavora davvero.',
+        odoo_tag1: 'Moduli su misura',
+        odoo_tag2: 'Migrazione dati',
+        odoo_tag3: 'Integrazioni',
+        odoo_tag4: 'Processi',
+        musicwork_title: 'Musica e audio',
+        musicwork1_name: 'Spotify Downloader',
+        musicwork1_desc: 'Un\'app Angular + Node per scaricare brani, album e playlist, con progresso live, log e rate limit.',
+        musicwork2_name: 'DJ Preview',
+        musicwork2_desc: 'Scarica un DJ set da YouTube, individua le transizioni e ritaglia un\'anteprima di un minuto per ciascuna.',
+        musicwork3_name: 'Discogs to Preview',
+        musicwork3_desc: 'Un LLM legge gli annunci Discogs, trova le anteprime corrispondenti su YouTube e le riproduce.',
+        datawork_title: 'Dati e automazioni',
+        datawork1_name: 'Report spese',
+        datawork1_desc: 'Legge un estratto conto ODS, calcola i KPI e genera un report HTML autonomo con grafici e CSV.',
+        datawork2_name: 'Lead Facebook → Odoo',
+        datawork2_desc: 'Una sincronizzazione giornaliera che trasforma i lead delle Facebook Lead Ads in opportunità CRM, senza export manuali.',
+        datawork3_name: 'Stampa etichette',
+        datawork3_desc: 'Invia etichette ZPL direttamente a stampanti Honeywell via rete o seriale.',
+        datawork4_name: 'Docs in Markdown',
+        datawork4_desc: 'Esplora un sito di documentazione e lo converte in un unico file Markdown.',
+        aiwork_title: 'Progetti AI',
+        aiwork1_name: 'Gen Z Wellness Predictor',
+        aiwork1_desc: 'Una pipeline di machine learning che prevede indicatori di benessere mentale da dati su stile di vita e biometria, confrontando ensemble e reti neurali.',
+        aiwork2_name: 'Riconoscimento cifre',
+        aiwork2_desc: 'Una CNN servita da Flask con una canvas Angular per il riconoscimento in tempo reale.',
+        aiwork3_name: 'Face Clustering',
+        aiwork3_desc: 'Rileva i volti in un archivio fotografico e li raggruppa per persona con embedding e DBSCAN.',
+        aiwork4_name: 'AI Image Enhancer',
+        aiwork4_desc: 'Un upscaler da riga di comando basato su Real-ESRGAN, con supporto GPU e tiling per schede con poca VRAM.',
+        aiwork5_name: 'Orchestrazione agentica',
+        aiwork5_desc: 'Una pipeline leggibile in cui agenti di ricerca, scrittura e revisione si passano il lavoro.',
+        project_title: 'Shelfy',
+        project_desc: 'Una piccola app per i libri che possiedo e presto. È nata per sistemare la mia libreria e mi ha insegnato quanto lavoro serve per mantenere una cosa semplice.',
+        project_cta: 'Scopri di più',
+        project_quote: 'Un posto tranquillo per i libri che hai davvero.',
+        modal_tag: 'Progetto',
+        music_eyebrow: '06 — Suono',
         music_title: 'cavi.wav',
-        music_tagline: 'Condivido buone vibrazioni attraverso la musica 🎶✨',
-        music_tab_spotify: '// SPOTIFY',
-        music_tab_youtube: '// YOUTUBE',
-        music_tab_instagram: '// INSTAGRAM',
+        music_tagline: 'Dischi, mix e scoperte notturne.',
+        music_tab_spotify: 'Spotify',
+        music_tab_youtube: 'YouTube',
+        music_tab_instagram: 'Instagram',
         music_spotify_cta: 'Apri tutte le 47 playlist',
         music_yt_visit: 'Visita il canale',
-        music_yt_desc: 'DJ set, mix & contenuti musicali',
+        music_yt_desc: 'DJ set, mix e musica',
         music_yt_cta: 'Iscriviti su YouTube',
         music_ig_desc: 'Musica · DJ · Vibes',
         music_ig_visit: 'Vedi profilo',
         music_ig_cta: 'Segui @cavi.media',
-        song_title: 'Track Roulette',
-        song_tagline: 'Premi SHUFFLE — lascia che la macchina scelga un brano dalle mie playlist 🎲',
-        song_placeholder: 'Pronto quando vuoi...',
-        song_shuffle: 'SHUFFLE',
-        contact_title: '// CONTATTAMI',
-        connect_title: '// SEGUIMI',
+        roulette_eyebrow: '07 — Playlist',
+        roulette_title: 'Scegli un brano',
+        roulette_tagline: 'Lascia che l\'archivio scelga per te.',
+        roulette_placeholder: 'Pronto quando vuoi.',
+        roulette_btn: 'Mescola',
+        contact_eyebrow: '06 — Contatti',
+        contact_title: 'Scrivimi',
+        contact_lead: 'Se hai un progetto in mente, una domanda o semplicemente voglia di scambiarci due idee, mi fa piacere sentirti.',
+        connect_title: 'Altrove',
         lists_title: 'Le Mie Liste',
-        lists_tagline: 'Libri, film e album che tengo traccia.',
-        lists_col_title: 'TITOLO',
-        lists_col_year: 'ANNO',
-        lists_col_artist: 'ARTISTA',
-        lists_filter: 'Filtra l\'archivio...',
-        lists_loading: 'Caricamento archivio...',
-        lists_empty: 'Nessun elemento trovato.',
-        lists_error: 'Impossibile caricare la cartella lists/ — serve un server HTTP.',
+        lists_tagline: 'Libri, film e album da ricordare.',
+        lists_col_title: 'Titolo',
+        lists_col_year: 'Anno',
+        lists_col_artist: 'Artista',
+        lists_filter: 'Filtra...',
+        lists_loading: 'Caricamento...',
+        lists_empty: 'Ancora niente qui.',
+        lists_error: 'Impossibile caricare lists/ — serve un server HTTP.',
         lists_count: '{n} elementi',
-        copyright: '© 2026 Riccardo Fusiello. Tutti i diritti riservati.',
-        loading_text: 'STAMPA NUMERO #01...'
+        copyright: '© 2026 Riccardo Fusiello.',
+        loading_text: 'Caricamento'
       }
     };
 
@@ -1459,18 +1174,12 @@
 
       document.querySelectorAll('[data-i18n]').forEach((el) => {
         const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-          el.classList.add('lang-fade');
-          setTimeout(() => {
-            el.innerHTML = translations[lang][key];
-            el.classList.remove('lang-fade');
-          }, 150);
-        }
+        if (translations[lang][key]) el.innerHTML = translations[lang][key];
       });
 
-      document.querySelectorAll('[data-i18n-glitch]').forEach((el) => {
-        const key = el.getAttribute('data-i18n-glitch');
-        if (translations[lang][key]) el.setAttribute('data-text', translations[lang][key]);
+      document.querySelectorAll('[data-i18n-ph]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-ph');
+        if (translations[lang][key]) el.setAttribute('placeholder', translations[lang][key]);
       });
 
       const langFlag = document.getElementById('langFlag');
@@ -1485,34 +1194,19 @@
 
       const toggle = document.getElementById('langToggle');
       if (toggle) {
-        toggle.classList.add('lang-switching');
-        setTimeout(() => toggle.classList.remove('lang-switching'), 400);
+        toggle.classList.add('is-switching');
+        setTimeout(() => toggle.classList.remove('is-switching'), 350);
       }
 
-      document.querySelectorAll('[data-i18n-ph]').forEach((el) => {
-        const key = el.getAttribute('data-i18n-ph');
-        if (translations[lang][key]) el.setAttribute('placeholder', translations[lang][key]);
-      });
-
-      if (typeof startHeroTyping === 'function') startHeroTyping(lang);
       if (typeof renderLists === 'function' && typeof listsLoaded !== 'undefined' && listsLoaded) renderLists();
     }
 
     const langToggleBtn = document.getElementById('langToggle');
     if (langToggleBtn) {
-      langToggleBtn.addEventListener('click', function () {
-        setLanguage(currentLang === 'en' ? 'it' : 'en');
-      });
+      langToggleBtn.addEventListener('click', () => setLanguage(currentLang === 'en' ? 'it' : 'en'));
     }
 
-    /* ============================================================
-       INIT
-    ============================================================ */
-    initCursor();
-    initTiltCards();
-    initMagnetic();
     setLanguage(currentLang);
-    applyHeroParallax(window.scrollY);
   </script>
 </body>
 </html>
