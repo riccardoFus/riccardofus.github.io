@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="theme-color" content="#0c0a0b" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="color-scheme" content="dark" />
+  <style>
+    html, body { background-color: #0c0a0b !important; }
+  </style>
+  <title>Riccardo Fusiello — Sviluppatore Software, Odoo ERP &amp; AI</title>
+  <meta name="description" content="Riccardo Fusiello è uno sviluppatore software e studente di AI ad Andria. Si occupa di implementazioni Odoo ERP, web app su misura e automazioni che fanno risparmiare tempo." />
+  <meta name="keywords" content="Riccardo Fusiello, sviluppatore software, Odoo ERP, sviluppatore Odoo, web app, Angular, Python, automazioni, intelligenza artificiale, Andria, Italia" />
+  <meta name="author" content="Riccardo Fusiello" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://riccardofus.github.io/Cavi-Website/it/" />
+  <link rel="alternate" hreflang="en" href="https://riccardofus.github.io/Cavi-Website/" />
+  <link rel="alternate" hreflang="it" href="https://riccardofus.github.io/Cavi-Website/it/" />
+  <link rel="alternate" hreflang="x-default" href="https://riccardofus.github.io/Cavi-Website/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Riccardo Fusiello — Sviluppatore Software, Odoo ERP &amp; AI" />
+  <meta property="og:description" content="Implementazioni Odoo ERP, web app su misura e automazioni. Sviluppatore software e studente di AI ad Andria, Italia." />
+  <meta property="og:url" content="https://riccardofus.github.io/Cavi-Website/it/" />
+  <meta property="og:image" content="https://riccardofus.github.io/Cavi-Website/misc/1756748267986.png" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="Riccardo Fusiello" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Riccardo Fusiello — Sviluppatore Software, Odoo ERP &amp; AI" />
+  <meta name="twitter:description" content="Implementazioni Odoo ERP, web app su misura e automazioni. Sviluppatore software e studente di AI ad Andria, Italia." />
+  <meta name="twitter:image" content="https://riccardofus.github.io/Cavi-Website/misc/1756748267986.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Riccardo Fusiello",
+        "jobTitle": "Software Developer",
+        "description": "Sviluppatore software e studente di AI. Implementazioni Odoo ERP, web app e automazioni.",
+        "url": "https://riccardofus.github.io/Cavi-Website/",
+        "image": "https://riccardofus.github.io/Cavi-Website/misc/1756748267986.png",
+        "address": { "@type": "PostalAddress", "addressLocality": "Andria", "addressCountry": "IT" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "University of Bari" },
+          { "@type": "CollegeOrUniversity", "name": "University of Trento" }
+        ],
+        "knowsAbout": ["Odoo ERP", "Software Engineering", "Artificial Intelligence", "Web Development", "Automation"],
+        "sameAs": [
+          "https://www.linkedin.com/in/riccardo-fusiello-a02446216/",
+          "https://github.com/riccardofus",
+          "https://www.instagram.com/riccardo.fusiello/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Riccardo Fusiello",
+        "url": "https://riccardofus.github.io/Cavi-Website/"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style/styleNew.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__fill" id="scrollProgressFill"></div>
+  </div>
+
+  <div class="loading" id="loadingScreen">
+    <div class="loading__brand">Riccardo Fusiello</div>
+    <div class="loading__text" id="loadingText">Loading</div>
+    <div class="loading__bar"><div class="loading__fill" id="loadingBarFill"></div></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg fixed-top site-nav">
+    <div class="container">
+      <a class="nav-brand" href="#top">
+        <span class="nav-brand__name">Riccardo Fusiello</span>
+        <span class="nav-brand__role">Software &amp; AI</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bars"><span></span><span></span><span></span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">Chi sono</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav_experience">Esperienza</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work" data-i18n="nav_work">Lavori</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lists" id="listsNavLink" data-i18n="nav_lists">Liste</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#music" data-i18n="nav_music">Musica</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contatti</a></li>
+          <li class="nav-item">
+            <a class="lang-toggle" href="../" hreflang="en" aria-label="English">
+              <span class="lang-flag">🇬🇧</span>
+              <span class="lang-label">EN</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="eyebrow hero__eyebrow" data-i18n="hero_eyebrow">Portfolio — 2026</p>
+      <h1 class="hero__title">
+        <span>Riccardo</span>
+        <span>Fusiello</span>
+      </h1>
+      <p class="hero__lead" data-i18n="hero_lead">Sono uno sviluppatore software e studente di intelligenza artificiale. Mi piace trasformare problemi complicati in strumenti semplici — e sono più soddisfatto quando qualcosa che ho costruito fa il suo lavoro senza farsi notare.</p>
+      <div class="hero__actions">
+        <a href="../misc/CV.pdf" target="_blank" class="btn btn--primary" data-i18n="hero_cv">Scarica il CV</a>
+        <a href="#contact" class="btn btn--ghost" data-i18n="hero_contact">Scrivimi</a>
+      </div>
+      <div class="hero__meta">
+        <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="hero_location">Andria, Italia</span></span>
+        <span class="status"><i></i> <span data-i18n="hero_status">Aperto a nuove opportunità</span></span>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#about" aria-label="Scroll to about">
+      <span></span>
+    </a>
+  </header>
+
+  <main>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__portrait reveal" style="--d:.05s">
+            <div class="portrait">
+              <img src="../misc/1756748267986.png" alt="Riccardo Fusiello" class="portrait__img">
+            </div>
+          </div>
+          <div class="about__body">
+            <p class="eyebrow reveal" style="--d:.1s" data-i18n="about_eyebrow">01 — Chi sono</p>
+            <h2 class="section-title reveal" style="--d:.15s" data-i18n="about_title">Qualcosa su di me</h2>
+            <p class="section-lead reveal" style="--d:.2s" data-i18n="about_p1">Sono Riccardo. Scrivo software, studio intelligenza artificiale e passo molto tempo a chiedermi come stanno insieme le cose. Il mio lavoro sta tra ingegneria e ricerca: cerco di capire cosa c'è sotto e poi la costruisco in pratica.</p>
+            <p class="reveal" style="--d:.25s" data-i18n="about_p2">Ho studiato informatica a Trento e ora sto finendo la magistrale in AI a Bari. Fuori dallo schermo ascolto dischi, mixo set o inseguo la prossima cosa da imparare. Mi piacciono le persone curiose, e provo a esserlo anch'io.</p>
+            <dl class="facts reveal" style="--d:.3s">
+              <div class="fact">
+                <dt data-i18n="fact_location_label">Dove</dt>
+                <dd data-i18n="fact_location">Andria, Italia</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="fact_education_label">Studio</dt>
+                <dd data-i18n="fact_education">Magistrale in Intelligenza Artificiale, Università di Bari</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="fact_focus_label">Mi occupo di</dt>
+                <dd data-i18n="fact_focus">Software, machine learning e lo spazio in mezzo</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt skills">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="skills_eyebrow">02 — Strumenti</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="skills_title">Con cosa lavoro</h2>
+        <div class="skills__grid">
+          <div class="skill-group reveal" style="--d:.1s">
+            <h3 class="skill-group__title" data-i18n="skills_languages">Linguaggi</h3>
+            <ul class="tags">
+              <li>C / C++</li><li>Java</li><li>Kotlin</li><li>Python</li><li>JavaScript</li><li>HTML / CSS</li><li>SQL</li><li>Shell / Bash</li><li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal" style="--d:.18s">
+            <h3 class="skill-group__title" data-i18n="skills_frameworks">Framework e strumenti</h3>
+            <ul class="tags">
+              <li>Jetpack Compose</li><li>Arduino</li><li>Google Workspace</li><li>Git</li><li>Linux</li><li>Angular</li><li>Odoo</li><li>OWL</li><li>TensorFlow / Keras</li><li>PyTorch</li><li>n8n</li><li>Dagshub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="exp_eyebrow">03 — Esperienza</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="exp_title">Dove ho lavorato</h2>
+        <div class="timeline">
+          <article class="timeline__item reveal" style="--d:.08s">
+            <span class="timeline__date">2024 — Present</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job1_title">Sviluppatore Software</h3>
+              <p class="timeline__org">System Project S.r.L, Andria</p>
+              <p class="timeline__desc" data-i18n="job1_desc">Soluzioni software e integrazione di sistemi per aziende.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.14s">
+            <span class="timeline__date">2024 — Present</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job2_title">Sviluppatore Freelance</h3>
+              <p class="timeline__org" data-i18n="job2_company">Lavoro autonomo</p>
+              <p class="timeline__desc" data-i18n="job2_desc">Automazione di test psicologici con Google Workspace scripting.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.2s">
+            <span class="timeline__date">2024</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job3_title">Tirocinante Machine Learning</h3>
+              <p class="timeline__org">University of Trento</p>
+              <p class="timeline__desc" data-i18n="job3_desc">Ricerca e implementazione di modelli di machine learning per progetti accademici.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.26s">
+            <span class="timeline__date">2023 — 2024</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job4_title">IT Service Desk</h3>
+              <p class="timeline__org">University of Trento</p>
+              <p class="timeline__desc" data-i18n="job4_desc">Supporto tecnico e risoluzione problemi per studenti e personale.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.32s">
+            <span class="timeline__date">2022</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job5_title">Sviluppatore Full Stack</h3>
+              <p class="timeline__org" data-i18n="job5_company">Reply S.p.A, Remoto</p>
+              <p class="timeline__desc" data-i18n="job5_desc">Un progetto di sviluppo breve e intenso.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal" style="--d:.38s">
+            <span class="timeline__date">2020</span>
+            <div class="timeline__body">
+              <h3 class="timeline__role" data-i18n="job6_title">Sviluppatore Full Stack</h3>
+              <p class="timeline__org" data-i18n="job6_company">Nuvité S.r.L, Andria</p>
+              <p class="timeline__desc" data-i18n="job6_desc">Sviluppo web e gestione database.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section--alt education">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="edu_eyebrow">04 — Formazione</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="edu_title">Dove ho studiato</h2>
+        <div class="edu-grid">
+          <article class="edu-card reveal" style="--d:.08s">
+            <span class="edu-card__badge" data-i18n="edu_present">In corso</span>
+            <h3 class="edu-card__title" data-i18n="edu_master_title">Magistrale in Intelligenza Artificiale</h3>
+            <p class="edu-card__org" data-i18n="edu_master_uni">Università di Bari</p>
+            <p class="edu-card__desc" data-i18n="edu_master_desc">Machine learning, deep learning e data science.</p>
+          </article>
+          <article class="edu-card reveal" style="--d:.14s">
+            <span class="edu-card__badge">2021 — 2024</span>
+            <h3 class="edu-card__title" data-i18n="edu_bachelor_title">Triennale in Informatica</h3>
+            <p class="edu-card__org" data-i18n="edu_bachelor_uni">Università di Trento</p>
+            <p class="edu-card__desc" data-i18n="edu_bachelor_desc">Laurea 106/110. Tesi su architettura software.</p>
+          </article>
+          <article class="edu-card reveal" style="--d:.2s">
+            <span class="edu-card__badge">2016 — 2021</span>
+            <h3 class="edu-card__title" data-i18n="edu_diploma_title">Diploma in Informatica</h3>
+            <p class="edu-card__org" data-i18n="edu_diploma_school">ITIS Sen. Onofrio Jannuzzi</p>
+            <p class="edu-card__desc" data-i18n="edu_diploma_desc">Diploma 100/100 con lode.</p>
+          </article>
+        </div>
+        <div class="certs reveal" style="--d:.24s">
+          <h3 class="certs__title" data-i18n="cert_title">Certificazioni</h3>
+          <ul class="certs__list">
+            <li>CCNA Routing and Switching <span>2020</span></li>
+            <li>Comau Academy <span>2021</span></li>
+            <li>Odoo Masterclass <span>2024</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="work_eyebrow">05 — Cosa costruisco</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="work_title">Cose che costruisco</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="work_intro">La maggior parte del mio lavoro sta in quattro posti: implementazioni Odoo, strumenti per la musica, dati e automazioni, ed esperimenti di intelligenza artificiale.</p>
+
+        <div class="work-grid">
+          <article class="work-card work-card--wide reveal" style="--d:.14s">
+            <p class="work-card__index">01</p>
+            <h3 class="work-card__title" data-i18n="odoo_title">Odoo ERP</h3>
+            <p class="work-card__text" data-i18n="odoo_desc">Ho lavorato a diverse implementazioni Odoo per aziende di settori diversi. Moduli su misura, migrazioni dati, integrazioni e modifiche ai processi — i dettagli restano del cliente, ma l'obiettivo è sempre lo stesso: far aderire il sistema a come l'azienda lavora davvero.</p>
+            <ul class="tags work-tags">
+              <li data-i18n="odoo_tag1">Moduli su misura</li>
+              <li data-i18n="odoo_tag2">Migrazione dati</li>
+              <li data-i18n="odoo_tag3">Integrazioni</li>
+              <li data-i18n="odoo_tag4">Processi</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal" style="--d:.2s">
+            <p class="work-card__index">02</p>
+            <h3 class="work-card__title" data-i18n="musicwork_title">Musica e audio</h3>
+            <ul class="work-list">
+              <li>
+                <h4 data-i18n="musicwork1_name">Spotify Downloader</h4>
+                <p data-i18n="musicwork1_desc">Un'app Angular + Node per scaricare brani, album e playlist, con progresso live, log e rate limit.</p>
+              </li>
+              <li>
+                <h4 data-i18n="musicwork2_name">DJ Preview</h4>
+                <p data-i18n="musicwork2_desc">Scarica un DJ set da YouTube, individua le transizioni e ritaglia un'anteprima di un minuto per ciascuna.</p>
+              </li>
+              <li>
+                <h4 data-i18n="musicwork3_name">Discogs to Preview</h4>
+                <p data-i18n="musicwork3_desc">Un LLM legge gli annunci Discogs, trova le anteprime corrispondenti su YouTube e le riproduce.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal" style="--d:.26s">
+            <p class="work-card__index">03</p>
+            <h3 class="work-card__title" data-i18n="datawork_title">Dati e automazioni</h3>
+            <ul class="work-list">
+              <li>
+                <h4 data-i18n="datawork1_name">Report spese</h4>
+                <p data-i18n="datawork1_desc">Legge un estratto conto ODS, calcola i KPI e genera un report HTML autonomo con grafici e CSV.</p>
+              </li>
+              <li>
+                <h4 data-i18n="datawork2_name">Lead Facebook → Odoo</h4>
+                <p data-i18n="datawork2_desc">Una sincronizzazione giornaliera che trasforma i lead delle Facebook Lead Ads in opportunità CRM, senza export manuali.</p>
+              </li>
+              <li>
+                <h4 data-i18n="datawork3_name">Stampa etichette</h4>
+                <p data-i18n="datawork3_desc">Invia etichette ZPL direttamente a stampanti Honeywell via rete o seriale.</p>
+              </li>
+              <li>
+                <h4 data-i18n="datawork4_name">Docs in Markdown</h4>
+                <p data-i18n="datawork4_desc">Esplora un sito di documentazione e lo converte in un unico file Markdown.</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="work-card work-card--wide reveal" style="--d:.32s">
+            <p class="work-card__index">04</p>
+            <h3 class="work-card__title" data-i18n="aiwork_title">Progetti AI</h3>
+            <ul class="work-list work-list--grid">
+              <li>
+                <h4 data-i18n="aiwork1_name">Gen Z Wellness Predictor</h4>
+                <p data-i18n="aiwork1_desc">Una pipeline di machine learning che prevede indicatori di benessere mentale da dati su stile di vita e biometria, confrontando ensemble e reti neurali.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork2_name">Riconoscimento cifre</h4>
+                <p data-i18n="aiwork2_desc">Una CNN servita da Flask con una canvas Angular per il riconoscimento in tempo reale.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork3_name">Face Clustering</h4>
+                <p data-i18n="aiwork3_desc">Rileva i volti in un archivio fotografico e li raggruppa per persona con embedding e DBSCAN.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork4_name">AI Image Enhancer</h4>
+                <p data-i18n="aiwork4_desc">Un upscaler da riga di comando basato su Real-ESRGAN, con supporto GPU e tiling per schede con poca VRAM.</p>
+              </li>
+              <li>
+                <h4 data-i18n="aiwork5_name">Orchestrazione agentica</h4>
+                <p data-i18n="aiwork5_desc">Una pipeline leggibile in cui agenti di ricerca, scrittura e revisione si passano il lavoro.</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Old project card, kept for reference:
+        <article class="project reveal" style="--d:.1s" data-title="Shelfy" data-quote="A quiet place for the books you actually own.">
+          <div class="project__media" aria-hidden="true"><span class="project__icon"><i class="fas fa-book-open"></i></span></div>
+          <div class="project__body">
+            <p class="project__index">01</p>
+            <h3 class="project__title" data-i18n="project_title">Shelfy</h3>
+            <p class="project__quote" data-i18n="project_quote">Un posto tranquillo per i libri che hai davvero.</p>
+            <p class="project__desc" data-i18n="project_desc">Una piccola app per i libri che possiedo e presto. È nata per sistemare la mia libreria e mi ha insegnato quanto lavoro serve per mantenere una cosa semplice.</p>
+          </div>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <!-- Music and roulette are kept here for reference. Remove this comment block to restore them.
+    <section id="music" class="section section--alt music">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="music_eyebrow">06 — Suono</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="music_title">cavi.wav</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="music_tagline">Dischi, mix e scoperte notturne.</p>
+
+        <div class="tabs reveal" style="--d:.14s">
+          <button class="tab is-active" data-tab="spotify" data-i18n="music_tab_spotify">Spotify</button>
+          <button class="tab" data-tab="youtube" data-i18n="music_tab_youtube">YouTube</button>
+          <button class="tab" data-tab="instagram" data-i18n="music_tab_instagram">Instagram</button>
+        </div>
+
+        <div class="panel is-active" id="panel-spotify">
+          <div class="spotify-grid">
+            <div class="spotify-card reveal" style="--d:.05s">
+              <iframe src="https://open.spotify.com/embed/playlist/5WXVYnbA08tIUIexoFm0GP" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Jazz-Funky House</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.1s">
+              <iframe src="https://open.spotify.com/embed/playlist/3mCXkog9fWWtxIYX5mbaWJ" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Glitchato</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.15s">
+              <iframe src="https://open.spotify.com/embed/playlist/39CWgfBArrnIoXfnEpK1XA" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Soundtrack fuori di testa</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.2s">
+              <iframe src="https://open.spotify.com/embed/playlist/6AYfZqv8yufAK4ynfZICKw" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Jungle Vibes</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.25s">
+              <iframe src="https://open.spotify.com/embed/playlist/7pCNudfXyp25BJp5EGXy1m" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Dream man</p>
+            </div>
+            <div class="spotify-card reveal" style="--d:.3s">
+              <iframe src="https://open.spotify.com/embed/playlist/72c80SP8YSASEz9Bkwkxh2" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="spotify-label">Karaokando</p>
+            </div>
+          </div>
+          <div class="panel__cta">
+            <a href="https://open.spotify.com/user/11134519888" target="_blank" class="btn btn--ghost" data-i18n="music_spotify_cta">Apri tutte le 47 playlist</a>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-youtube">
+          <div class="youtube-card reveal">
+            <div class="youtube-thumb" data-href="https://www.youtube.com/@Caviiiiii">
+              <i class="fab fa-youtube youtube-play"></i>
+              <span class="youtube-thumb__label" data-i18n="music_yt_visit">Visita il canale</span>
+            </div>
+            <div class="youtube-info">
+              <h3>cavi.wav</h3>
+              <p data-i18n="music_yt_desc">DJ set, mix e musica</p>
+              <a href="https://www.youtube.com/@Caviiiiii" target="_blank" class="link">@Caviiiiii</a>
+            </div>
+          </div>
+          <div class="panel__cta">
+            <a href="https://www.youtube.com/@Caviiiiii" target="_blank" class="btn btn--ghost" data-i18n="music_yt_cta">Iscriviti su YouTube</a>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-instagram">
+          <div class="instagram-card reveal">
+            <div class="instagram-header">
+              <div class="instagram-avatar"><i class="fab fa-instagram"></i></div>
+              <div>
+                <h3>cavi.media</h3>
+                <p data-i18n="music_ig_desc">Musica · DJ · Vibes</p>
+              </div>
+            </div>
+            <div class="instagram-post" data-href="https://www.instagram.com/cavi.media">
+              <i class="fab fa-instagram"></i>
+              <span data-i18n="music_ig_visit">Vedi profilo</span>
+            </div>
+            <div class="panel__cta">
+              <a href="https://www.instagram.com/cavi.media" target="_blank" class="btn btn--ghost" data-i18n="music_ig_cta">Segui @cavi.media</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roulette" class="section roulette">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="roulette_eyebrow">07 — Playlist</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="roulette_title">Scegli un brano</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="roulette_tagline">Lascia che l'archivio scelga per te.</p>
+        <div class="roulette__box reveal" style="--d:.15s">
+          <div class="roulette__display" id="songDisplay">
+            <div class="roulette__placeholder" id="songPlaceholder">
+              <i class="fas fa-compact-disc"></i>
+              <p data-i18n="roulette_placeholder">Pronto quando vuoi.</p>
+            </div>
+            <div class="roulette__result" id="songResult" style="display:none">
+              <iframe id="songFrame" src="" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy"></iframe>
+              <p class="roulette__track" id="songTrackName"></p>
+              <p class="roulette__playlist" id="songPlaylistName"></p>
+            </div>
+          </div>
+          <button class="btn btn--primary" id="shuffleBtn">
+            <i class="fas fa-shuffle"></i> <span data-i18n="roulette_btn">Mescola</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <section id="contact" class="section section--alt contact">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="contact_eyebrow">06 — Contatti</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="contact_title">Scrivimi</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="contact_lead">Se hai un progetto in mente, una domanda o semplicemente voglia di scambiarci due idee, mi fa piacere sentirti.</p>
+        <div class="contact__grid">
+          <div class="contact-card reveal" style="--d:.15s">
+            <a href="mailto:riccardo.fusiello02@gmail.com" class="contact-card__link">
+              <i class="fas fa-envelope"></i>
+              <span>riccardo.fusiello02@gmail.com</span>
+            </a>
+            <a href="tel:+393895398639" class="contact-card__link">
+              <i class="fas fa-phone"></i>
+              <span>(+39) 389 539 8639</span>
+            </a>
+          </div>
+          <div class="contact-card reveal" style="--d:.2s">
+            <h3 class="contact-card__title" data-i18n="connect_title">Altrove</h3>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/riccardo-fusiello-a02446216/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/riccardofus" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/riccardo.fusiello/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://open.spotify.com/user/11134519888?si=5ef3217eab024590" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span data-i18n="copyright">© 2026 Riccardo Fusiello.</span>
+      <a href="#top" class="footer__top"><span data-i18n="back_top">Torna su</span> <i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <div class="lists-overlay" id="listsOverlay" aria-hidden="true">
+    <div class="lists-overlay__backdrop" data-close-lists></div>
+    <div class="lists-overlay__frame" role="dialog" aria-modal="true" aria-label="My Lists">
+      <button class="lists-close" id="listsClose" aria-label="Close">✕</button>
+      <div class="lists-head">
+        <p class="eyebrow" data-i18n="nav_lists">Liste</p>
+        <h2 class="section-title" data-i18n="lists_title">Le Mie Liste</h2>
+        <p class="section-lead" data-i18n="lists_tagline">Libri, film e album da ricordare.</p>
+      </div>
+      <div class="lists-controls">
+        <div class="lists-tabs" id="listsTabs"></div>
+        <label class="lists-search">
+          <i class="fas fa-search"></i>
+          <input type="search" id="listsSearch" data-i18n-ph="lists_filter" placeholder="Filtra...">
+        </label>
+      </div>
+      <div class="lists-table-wrap">
+        <div class="lists-empty" id="listsEmpty" data-i18n="lists_loading">Caricamento...</div>
+        <table class="lists-table" id="listsTable" hidden>
+          <thead>
+            <tr>
+              <th data-key="title" data-i18n="lists_col_title">Titolo</th>
+              <th data-key="year" data-i18n="lists_col_year">Anno</th>
+              <th data-key="artist" data-i18n="lists_col_artist">Artista</th>
+            </tr>
+          </thead>
+          <tbody id="listsBody"></tbody>
+        </table>
+      </div>
+      <p class="lists-hint" id="listsHint"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script>
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const loadingBar = document.getElementById('loadingBarFill');
+    const loadingScreen = document.getElementById('loadingScreen');
+    let progress = 0;
+    const loadingInterval = setInterval(() => {
+      progress += Math.random() * 18 + 8;
+      if (progress >= 100) {
+        progress = 100;
+        clearInterval(loadingInterval);
+        loadingBar.style.width = '100%';
+        setTimeout(() => {
+          loadingScreen.classList.add('is-hidden');
+          document.body.classList.add('is-loaded');
+          setTimeout(() => { loadingScreen.style.display = 'none'; }, 700);
+        }, 250);
+        return;
+      }
+      loadingBar.style.width = progress + '%';
+    }, 160);
+
+    const progressFill = document.getElementById('scrollProgressFill');
+    function updateScrollProgress() {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      progressFill.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + '%';
+    }
+    window.addEventListener('scroll', updateScrollProgress, { passive: true });
+    window.addEventListener('resize', updateScrollProgress);
+    updateScrollProgress();
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    const navToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navToggler && navbarCollapse) {
+      navToggler.addEventListener('click', () => {
+        setTimeout(() => navToggler.classList.toggle('is-open', navbarCollapse.classList.contains('show')), 10);
+      });
+      navbarCollapse.querySelectorAll('.nav-link').forEach((link) => {
+        link.addEventListener('click', () => navToggler.classList.remove('is-open'));
+      });
+    }
+
+    const musicEnabled = document.getElementById('music') || document.getElementById('roulette');
+    if (musicEnabled) {
+    document.querySelectorAll('.tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const target = tab.dataset.tab;
+        document.querySelectorAll('.tab').forEach((t) => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        document.querySelectorAll('.panel').forEach((p) => {
+          p.classList.toggle('is-active', p.id === 'panel-' + target);
+        });
+      });
+    });
+
+    document.querySelectorAll('[data-href]').forEach((el) => {
+      el.addEventListener('click', () => window.open(el.dataset.href, '_blank'));
+    });
+
+    let songDatabase = [];
+    let songsLoaded = false;
+    fetch('../spotify_tracks.json')
+      .then((r) => r.json())
+      .then((data) => {
+        songDatabase = data.t.map((t) => ({ id: t[0], playlist: t[1] }));
+        songsLoaded = true;
+      })
+      .catch((err) => console.warn('Could not load spotify_tracks.json:', err));
+
+    const shuffleBtn = document.getElementById('shuffleBtn');
+    const songPlaceholder = document.getElementById('songPlaceholder');
+    const songResult = document.getElementById('songResult');
+    const songFrame = document.getElementById('songFrame');
+    const songTrackName = document.getElementById('songTrackName');
+    const songPlaylistName = document.getElementById('songPlaylistName');
+    let lastTrackIndex = -1;
+
+    if (shuffleBtn) {
+      shuffleBtn.addEventListener('click', () => {
+        if (!songsLoaded || songDatabase.length === 0) {
+          songTrackName.textContent = '';
+          songPlaylistName.textContent = 'Loading tracks...';
+          songPlaceholder.style.display = 'none';
+          songResult.style.display = 'block';
+          return;
+        }
+        let idx;
+        do { idx = Math.floor(Math.random() * songDatabase.length); }
+        while (idx === lastTrackIndex && songDatabase.length > 1);
+        lastTrackIndex = idx;
+        const track = songDatabase[idx];
+        shuffleBtn.classList.add('is-spinning');
+        songPlaceholder.style.display = 'none';
+        songResult.style.display = 'none';
+        setTimeout(() => {
+          songFrame.src = 'https://open.spotify.com/embed/track/' + track.id;
+          songTrackName.textContent = '';
+          songPlaylistName.textContent = 'From: ' + track.playlist;
+          songResult.style.display = 'block';
+          shuffleBtn.classList.remove('is-spinning');
+        }, 450);
+      });
+    }
+    }
+
+    const listsOverlay = document.getElementById('listsOverlay');
+    const listsTabsEl = document.getElementById('listsTabs');
+    const listsTable = document.getElementById('listsTable');
+    const listsBody = document.getElementById('listsBody');
+    const listsEmpty = document.getElementById('listsEmpty');
+    const listsHint = document.getElementById('listsHint');
+    const listsSearch = document.getElementById('listsSearch');
+
+    let listsLoaded = false;
+    let listsLoading = false;
+    let listsData = [];
+    let listsActive = 0;
+    let listsSortKey = 'year';
+    let listsSortDir = -1;
+    let listsScrollY = 0;
+
+    function t(key) {
+      return (translations[currentLang] && translations[currentLang][key]) || '';
+    }
+
+    function detectDelimiter(line) {
+      const counts = { ',': 0, ';': 0, '\t': 0 };
+      let inQ = false;
+      for (const ch of line) {
+        if (ch === '"') inQ = !inQ;
+        else if (!inQ && ch in counts) counts[ch]++;
+      }
+      return Object.keys(counts).reduce((a, b) => (counts[a] >= counts[b] ? a : b), ',');
+    }
+
+    function parseCSV(text, delim) {
+      text = String(text).replace(/^\uFEFF/, '');
+      const rows = [];
+      let row = [];
+      let field = '';
+      let inQ = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (inQ) {
+          if (c === '"') {
+            if (text[i + 1] === '"') { field += '"'; i++; }
+            else inQ = false;
+          } else field += c;
+        } else if (c === '"') {
+          inQ = true;
+        } else if (c === delim) {
+          row.push(field); field = '';
+        } else if (c === '\n') {
+          row.push(field); rows.push(row); row = []; field = '';
+        } else if (c !== '\r') {
+          field += c;
+        }
+      }
+      if (field !== '' || row.length) { row.push(field); rows.push(row); }
+      return rows.filter((r) => r.some((c) => c.trim() !== ''));
+    }
+
+    function normalizeHeader(h) {
+      return String(h).trim().toLowerCase().replace(/["']/g, '');
+    }
+
+    function findCol(headers, candidates) {
+      for (const c of candidates) {
+        const i = headers.findIndex((h) => h === c || h.includes(c));
+        if (i !== -1) return i;
+      }
+      return -1;
+    }
+
+    async function loadLists() {
+      if (listsLoaded || listsLoading) return;
+      listsLoading = true;
+      listsEmpty.hidden = false;
+      listsEmpty.textContent = t('lists_loading');
+      listsTable.hidden = true;
+      try {
+        const manifestRes = await fetch('../lists/manifest.json', { cache: 'no-cache' });
+        if (!manifestRes.ok) throw new Error('manifest ' + manifestRes.status);
+        const manifest = await manifestRes.json();
+        listsData = await Promise.all(manifest.map(async (entry) => {
+          const res = await fetch('../lists/' + entry.file, { cache: 'no-cache' });
+          if (!res.ok) throw new Error(entry.file + ' ' + res.status);
+          const text = await res.text();
+          const firstLine = text.split(/\r?\n/)[0] || '';
+          const rows = parseCSV(text, detectDelimiter(firstLine));
+          if (!rows.length) return { label: entry.label, items: [] };
+          const headers = rows[0].map(normalizeHeader);
+          const iTitle = findCol(headers, ['titolo', 'title', 'nome']);
+          const iYear = findCol(headers, ['anno', 'year', 'data']);
+          const iArtist = findCol(headers, ['artista', 'artist', 'autore', 'regista', 'author']);
+          const items = rows.slice(1).map((r) => ({
+            title: (iTitle !== -1 ? r[iTitle] : r[0]) || '',
+            year: (iYear !== -1 ? r[iYear] : r[1]) || '',
+            artist: (iArtist !== -1 ? r[iArtist] : r[2]) || ''
+          }));
+          return { label: entry.label, items };
+        }));
+        listsLoaded = true;
+        renderLists();
+      } catch (err) {
+        console.warn('Lists load error:', err);
+        listsEmpty.hidden = false;
+        listsEmpty.textContent = t('lists_error');
+        listsTable.hidden = true;
+        listsHint.textContent = '';
+      } finally {
+        listsLoading = false;
+      }
+    }
+
+    function renderLists() {
+      if (!listsLoaded) return;
+      listsTabsEl.innerHTML = '';
+      listsData.forEach((list, i) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'lists-tab' + (i === listsActive ? ' is-active' : '');
+        btn.textContent = list.label;
+        btn.addEventListener('click', () => { listsActive = i; renderLists(); });
+        listsTabsEl.appendChild(btn);
+      });
+
+      listsTable.querySelectorAll('thead th').forEach((th) => {
+        th.classList.toggle('is-sorted', th.dataset.key === listsSortKey);
+      });
+
+      const list = listsData[listsActive] || { items: [] };
+      const q = (listsSearch.value || '').trim().toLowerCase();
+      const items = list.items.filter((it) =>
+        !q || (it.title + ' ' + it.artist + ' ' + it.year).toLowerCase().includes(q));
+      items.sort((a, b) => {
+        let av = a[listsSortKey];
+        let bv = b[listsSortKey];
+        if (listsSortKey === 'year') { av = parseInt(av, 10) || 0; bv = parseInt(bv, 10) || 0; }
+        else { av = String(av).toLowerCase(); bv = String(bv).toLowerCase(); }
+        if (av < bv) return -1 * listsSortDir;
+        if (av > bv) return 1 * listsSortDir;
+        return 0;
+      });
+
+      listsBody.innerHTML = '';
+      items.forEach((it) => {
+        const tr = document.createElement('tr');
+        const tdT = document.createElement('td');
+        tdT.className = 'list-title'; tdT.dataset.label = t('lists_col_title'); tdT.textContent = it.title;
+        const tdY = document.createElement('td');
+        tdY.className = 'list-year'; tdY.dataset.label = t('lists_col_year'); tdY.textContent = it.year;
+        const tdA = document.createElement('td');
+        tdA.className = 'list-artist'; tdA.dataset.label = t('lists_col_artist'); tdA.textContent = it.artist;
+        tr.append(tdT, tdY, tdA);
+        listsBody.appendChild(tr);
+      });
+
+      const has = items.length > 0;
+      listsTable.hidden = !has;
+      listsEmpty.hidden = has;
+      if (!has) listsEmpty.textContent = t('lists_empty');
+      listsHint.textContent = t('lists_count').replace('{n}', items.length);
+      listsSearch.setAttribute('placeholder', t('lists_filter'));
+    }
+
+    function openLists() {
+      if (!listsOverlay) return;
+      listsScrollY = window.scrollY || window.pageYOffset || 0;
+      listsOverlay.classList.add('is-open');
+      listsOverlay.setAttribute('aria-hidden', 'false');
+      document.documentElement.classList.add('is-locked');
+      document.body.classList.add('is-locked');
+      document.body.style.top = (-listsScrollY) + 'px';
+      loadLists();
+      if (listsLoaded) renderLists();
+    }
+
+    function closeLists() {
+      if (!listsOverlay) return;
+      listsOverlay.classList.remove('is-open');
+      listsOverlay.setAttribute('aria-hidden', 'true');
+      document.documentElement.classList.remove('is-locked');
+      document.body.classList.remove('is-locked');
+      document.body.style.top = '';
+      window.scrollTo(0, listsScrollY);
+    }
+
+    const listsNavLink = document.getElementById('listsNavLink');
+    if (listsNavLink) listsNavLink.addEventListener('click', (e) => { e.preventDefault(); openLists(); });
+    if (listsOverlay) {
+      listsOverlay.querySelector('[data-close-lists]').addEventListener('click', closeLists);
+      document.getElementById('listsClose').addEventListener('click', closeLists);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && listsOverlay.classList.contains('is-open')) closeLists();
+      });
+    }
+    if (listsSearch) listsSearch.addEventListener('input', renderLists);
+    listsTable.querySelectorAll('thead th').forEach((th) => {
+      th.addEventListener('click', () => {
+        const key = th.dataset.key;
+        if (listsSortKey === key) listsSortDir *= -1;
+        else { listsSortKey = key; listsSortDir = key === 'year' ? -1 : 1; }
+        renderLists();
+      });
+    });
+
+    const translations = {
+      en: {
+        nav_about: 'About',
+        nav_experience: 'Experience',
+        nav_work: 'Work',
+        nav_lists: 'Lists',
+        nav_music: 'Music',
+        nav_contact: 'Contact',
+        hero_eyebrow: 'Portfolio — 2026',
+        hero_lead: 'I\'m a software developer and AI student from southern Italy. I like turning messy problems into simple tools — and I\'m happiest when something I built quietly does its job.',
+        hero_cv: 'Download CV',
+        hero_contact: 'Get in touch',
+        hero_location: 'Andria, Italy',
+        hero_status: 'Open to opportunities',
+        about_eyebrow: '01 — About',
+        about_title: 'A bit about me',
+        about_p1: 'I\'m Riccardo. I write software, study artificial intelligence, and spend a lot of time wondering how things fit together. My work sits between engineering and research: I try to understand what\'s underneath, then build it for real.',
+        about_p2: 'I studied computer science in Trento and I\'m now finishing a master\'s in AI in Bari. Away from the screen I\'m usually listening to records, mixing a set, or chasing the next thing to learn. I like curious people, and I try to be one.',
+        fact_location_label: 'Based in',
+        fact_location: 'Andria, Italy',
+        fact_education_label: 'Studying',
+        fact_education: 'MSc Artificial Intelligence, University of Bari',
+        fact_focus_label: 'Working on',
+        fact_focus: 'Software, machine learning, and the space between',
+        skills_eyebrow: '02 — Toolkit',
+        skills_title: 'What I work with',
+        skills_languages: 'Languages',
+        skills_frameworks: 'Frameworks & tools',
+        exp_eyebrow: '03 — Experience',
+        exp_title: 'Where I\'ve worked',
+        job1_title: 'Software Developer',
+        job1_desc: 'Software solutions and system integration for business clients.',
+        job2_title: 'Freelance Developer',
+        job2_company: 'Self-employed',
+        job2_desc: 'Automating psychological assessments with Google Workspace scripting.',
+        job3_title: 'Machine Learning Intern',
+        job3_desc: 'Research and implementation of machine learning models for academic projects.',
+        job4_title: 'IT Service Desk',
+        job4_desc: 'Technical support and troubleshooting for students and staff.',
+        job5_title: 'Full Stack Developer',
+        job5_company: 'Reply S.p.A, Remote',
+        job5_desc: 'A short, intense development project.',
+        job6_title: 'Full Stack Developer',
+        job6_company: 'Nuvité S.r.L, Andria',
+        job6_desc: 'Web development and database work.',
+        edu_eyebrow: '04 — Education',
+        edu_title: 'Where I studied',
+        edu_present: 'Present',
+        edu_master_title: 'MSc in Artificial Intelligence',
+        edu_master_uni: 'University of Bari',
+        edu_master_desc: 'Machine learning, deep learning and data science.',
+        edu_bachelor_title: 'BSc in Computer Science',
+        edu_bachelor_uni: 'University of Trento',
+        edu_bachelor_desc: 'Graduated 106/110. Thesis on software architecture.',
+        edu_diploma_title: 'Diploma in IT',
+        edu_diploma_school: 'ITIS Sen. Onofrio Jannuzzi',
+        edu_diploma_desc: 'Graduated 100/100 with honours.',
+        cert_title: 'Certifications',
+        work_eyebrow: '05 — What I build',
+        work_title: 'Things I build',
+        work_intro: 'Most of my work sits in four places: Odoo implementations, music tools, data and automations, and AI experiments.',
+        odoo_title: 'Odoo ERP',
+        odoo_desc: 'I\'ve worked on several Odoo implementations for companies in different sectors. Custom modules, data migrations, integrations and process changes — the details belong to the client, but the goal is always the same: make the system fit the way the business actually works.',
+        odoo_tag1: 'Custom modules',
+        odoo_tag2: 'Data migration',
+        odoo_tag3: 'Integrations',
+        odoo_tag4: 'Process design',
+        musicwork_title: 'Music & audio',
+        musicwork1_name: 'Spotify Downloader',
+        musicwork1_desc: 'An Angular + Node app for downloading tracks, albums and playlists, with live progress, logs and rate limiting.',
+        musicwork2_name: 'DJ Preview',
+        musicwork2_desc: 'Downloads a DJ set from YouTube, finds the transitions and cuts a one-minute preview around each one.',
+        musicwork3_name: 'Discogs to Preview',
+        musicwork3_desc: 'An LLM reads Discogs listings, finds the matching previews on YouTube and plays them.',
+        datawork_title: 'Data & automation',
+        datawork1_name: 'Expense report',
+        datawork1_desc: 'Reads a bank statement in ODS, calculates the KPIs and generates a standalone HTML report with charts and CSVs.',
+        datawork2_name: 'Facebook leads → Odoo',
+        datawork2_desc: 'A daily sync that turns Facebook Lead Ads into CRM opportunities, without manual exports.',
+        datawork3_name: 'Label printing',
+        datawork3_desc: 'Sends ZPL labels directly to Honeywell printers over the network or serial port.',
+        datawork4_name: 'Docs to Markdown',
+        datawork4_desc: 'Crawls a documentation site and turns the whole tree into a single Markdown file.',
+        aiwork_title: 'AI projects',
+        aiwork1_name: 'Gen Z Wellness Predictor',
+        aiwork1_desc: 'A machine learning pipeline that predicts mental health indicators from lifestyle and biometric data, comparing ensembles and neural networks.',
+        aiwork2_name: 'Handwritten Digit Recognition',
+        aiwork2_desc: 'A CNN served by Flask with an Angular canvas for real-time digit recognition.',
+        aiwork3_name: 'Face Clustering',
+        aiwork3_desc: 'Detects faces in a photo archive and groups them by person using embeddings and DBSCAN.',
+        aiwork4_name: 'AI Image Enhancer',
+        aiwork4_desc: 'A command-line upscaler built on Real-ESRGAN, with GPU support and tiling for small cards.',
+        aiwork5_name: 'Agentic Orchestration',
+        aiwork5_desc: 'A small, readable pipeline where research, writing and review agents hand work to each other.',
+        project_title: 'Shelfy',
+        project_desc: 'A small library app for the books I own and lend. It began as a fix for my own shelf and ended up teaching me how much work goes into keeping something simple.',
+        project_cta: 'Read more',
+        project_quote: 'A quiet place for the books you actually own.',
+        modal_tag: 'Project',
+        music_eyebrow: '06 — Sound',
+        music_title: 'cavi.wav',
+        music_tagline: 'Records, mixes and late-night discoveries.',
+        music_tab_spotify: 'Spotify',
+        music_tab_youtube: 'YouTube',
+        music_tab_instagram: 'Instagram',
+        music_spotify_cta: 'Open all 47 playlists',
+        music_yt_visit: 'Visit channel',
+        music_yt_desc: 'DJ sets, mixes and music',
+        music_yt_cta: 'Subscribe on YouTube',
+        music_ig_desc: 'Music · DJ · Vibes',
+        music_ig_visit: 'View profile',
+        music_ig_cta: 'Follow @cavi.media',
+        roulette_eyebrow: '07 — Playlist',
+        roulette_title: 'Pick a track',
+        roulette_tagline: 'Let the archive choose for you.',
+        roulette_placeholder: 'Ready when you are.',
+        roulette_btn: 'Shuffle',
+        contact_eyebrow: '06 — Contact',
+        contact_title: 'Say hello',
+        contact_lead: 'If you have a project in mind, a question, or just want to compare notes, I\'d like to hear from you.',
+        connect_title: 'Elsewhere',
+        lists_title: 'My Lists',
+        lists_tagline: 'Books, films and albums worth remembering.',
+        lists_col_title: 'Title',
+        lists_col_year: 'Year',
+        lists_col_artist: 'Artist',
+        lists_filter: 'Filter...',
+        lists_loading: 'Loading...',
+        lists_empty: 'Nothing here yet.',
+        lists_error: 'Could not load lists/ — serve the site over HTTP.',
+        lists_count: '{n} entries',
+        back_top: 'Back to top',
+        copyright: '© 2026 Riccardo Fusiello.',
+        loading_text: 'Loading'
+      },
+      it: {
+        nav_about: 'Chi sono',
+        nav_experience: 'Esperienza',
+        nav_work: 'Lavori',
+        nav_lists: 'Liste',
+        nav_music: 'Musica',
+        nav_contact: 'Contatti',
+        hero_eyebrow: 'Portfolio — 2026',
+        hero_lead: 'Sono uno sviluppatore software e studente di intelligenza artificiale. Mi piace trasformare problemi complicati in strumenti semplici — e sono più soddisfatto quando qualcosa che ho costruito fa il suo lavoro senza farsi notare.',
+        hero_cv: 'Scarica il CV',
+        hero_contact: 'Scrivimi',
+        hero_location: 'Andria, Italia',
+        hero_status: 'Aperto a nuove opportunità',
+        about_eyebrow: '01 — Chi sono',
+        about_title: 'Qualcosa su di me',
+        about_p1: 'Sono Riccardo. Scrivo software, studio intelligenza artificiale e passo molto tempo a chiedermi come stanno insieme le cose. Il mio lavoro sta tra ingegneria e ricerca: cerco di capire cosa c\'è sotto e poi la costruisco in pratica.',
+        about_p2: 'Ho studiato informatica a Trento e ora sto finendo la magistrale in AI a Bari. Fuori dallo schermo ascolto dischi, mixo set o inseguo la prossima cosa da imparare. Mi piacciono le persone curiose, e provo a esserlo anch\'io.',
+        fact_location_label: 'Dove',
+        fact_location: 'Andria, Italia',
+        fact_education_label: 'Studio',
+        fact_education: 'Magistrale in Intelligenza Artificiale, Università di Bari',
+        fact_focus_label: 'Mi occupo di',
+        fact_focus: 'Software, machine learning e lo spazio in mezzo',
+        skills_eyebrow: '02 — Strumenti',
+        skills_title: 'Con cosa lavoro',
+        skills_languages: 'Linguaggi',
+        skills_frameworks: 'Framework e strumenti',
+        exp_eyebrow: '03 — Esperienza',
+        exp_title: 'Dove ho lavorato',
+        job1_title: 'Sviluppatore Software',
+        job1_desc: 'Soluzioni software e integrazione di sistemi per aziende.',
+        job2_title: 'Sviluppatore Freelance',
+        job2_company: 'Lavoro autonomo',
+        job2_desc: 'Automazione di test psicologici con Google Workspace scripting.',
+        job3_title: 'Tirocinante Machine Learning',
+        job3_desc: 'Ricerca e implementazione di modelli di machine learning per progetti accademici.',
+        job4_title: 'IT Service Desk',
+        job4_desc: 'Supporto tecnico e risoluzione problemi per studenti e personale.',
+        job5_title: 'Sviluppatore Full Stack',
+        job5_company: 'Reply S.p.A, Remoto',
+        job5_desc: 'Un progetto di sviluppo breve e intenso.',
+        job6_title: 'Sviluppatore Full Stack',
+        job6_company: 'Nuvité S.r.L, Andria',
+        job6_desc: 'Sviluppo web e gestione database.',
+        edu_eyebrow: '04 — Formazione',
+        edu_title: 'Dove ho studiato',
+        edu_present: 'In corso',
+        edu_master_title: 'Magistrale in Intelligenza Artificiale',
+        edu_master_uni: 'Università di Bari',
+        edu_master_desc: 'Machine learning, deep learning e data science.',
+        edu_bachelor_title: 'Triennale in Informatica',
+        edu_bachelor_uni: 'Università di Trento',
+        edu_bachelor_desc: 'Laurea 106/110. Tesi su architettura software.',
+        edu_diploma_title: 'Diploma in Informatica',
+        edu_diploma_school: 'ITIS Sen. Onofrio Jannuzzi',
+        edu_diploma_desc: 'Diploma 100/100 con lode.',
+        cert_title: 'Certificazioni',
+        work_eyebrow: '05 — Cosa costruisco',
+        work_title: 'Cose che costruisco',
+        work_intro: 'La maggior parte del mio lavoro sta in quattro posti: implementazioni Odoo, strumenti per la musica, dati e automazioni, ed esperimenti di intelligenza artificiale.',
+        odoo_title: 'Odoo ERP',
+        odoo_desc: 'Ho lavorato a diverse implementazioni Odoo per aziende di settori diversi. Moduli su misura, migrazioni dati, integrazioni e modifiche ai processi — i dettagli restano del cliente, ma l\'obiettivo è sempre lo stesso: far aderire il sistema a come l\'azienda lavora davvero.',
+        odoo_tag1: 'Moduli su misura',
+        odoo_tag2: 'Migrazione dati',
+        odoo_tag3: 'Integrazioni',
+        odoo_tag4: 'Processi',
+        musicwork_title: 'Musica e audio',
+        musicwork1_name: 'Spotify Downloader',
+        musicwork1_desc: 'Un\'app Angular + Node per scaricare brani, album e playlist, con progresso live, log e rate limit.',
+        musicwork2_name: 'DJ Preview',
+        musicwork2_desc: 'Scarica un DJ set da YouTube, individua le transizioni e ritaglia un\'anteprima di un minuto per ciascuna.',
+        musicwork3_name: 'Discogs to Preview',
+        musicwork3_desc: 'Un LLM legge gli annunci Discogs, trova le anteprime corrispondenti su YouTube e le riproduce.',
+        datawork_title: 'Dati e automazioni',
+        datawork1_name: 'Report spese',
+        datawork1_desc: 'Legge un estratto conto ODS, calcola i KPI e genera un report HTML autonomo con grafici e CSV.',
+        datawork2_name: 'Lead Facebook → Odoo',
+        datawork2_desc: 'Una sincronizzazione giornaliera che trasforma i lead delle Facebook Lead Ads in opportunità CRM, senza export manuali.',
+        datawork3_name: 'Stampa etichette',
+        datawork3_desc: 'Invia etichette ZPL direttamente a stampanti Honeywell via rete o seriale.',
+        datawork4_name: 'Docs in Markdown',
+        datawork4_desc: 'Esplora un sito di documentazione e lo converte in un unico file Markdown.',
+        aiwork_title: 'Progetti AI',
+        aiwork1_name: 'Gen Z Wellness Predictor',
+        aiwork1_desc: 'Una pipeline di machine learning che prevede indicatori di benessere mentale da dati su stile di vita e biometria, confrontando ensemble e reti neurali.',
+        aiwork2_name: 'Riconoscimento cifre',
+        aiwork2_desc: 'Una CNN servita da Flask con una canvas Angular per il riconoscimento in tempo reale.',
+        aiwork3_name: 'Face Clustering',
+        aiwork3_desc: 'Rileva i volti in un archivio fotografico e li raggruppa per persona con embedding e DBSCAN.',
+        aiwork4_name: 'AI Image Enhancer',
+        aiwork4_desc: 'Un upscaler da riga di comando basato su Real-ESRGAN, con supporto GPU e tiling per schede con poca VRAM.',
+        aiwork5_name: 'Orchestrazione agentica',
+        aiwork5_desc: 'Una pipeline leggibile in cui agenti di ricerca, scrittura e revisione si passano il lavoro.',
+        project_title: 'Shelfy',
+        project_desc: 'Una piccola app per i libri che possiedo e presto. È nata per sistemare la mia libreria e mi ha insegnato quanto lavoro serve per mantenere una cosa semplice.',
+        project_cta: 'Scopri di più',
+        project_quote: 'Un posto tranquillo per i libri che hai davvero.',
+        modal_tag: 'Progetto',
+        music_eyebrow: '06 — Suono',
+        music_title: 'cavi.wav',
+        music_tagline: 'Dischi, mix e scoperte notturne.',
+        music_tab_spotify: 'Spotify',
+        music_tab_youtube: 'YouTube',
+        music_tab_instagram: 'Instagram',
+        music_spotify_cta: 'Apri tutte le 47 playlist',
+        music_yt_visit: 'Visita il canale',
+        music_yt_desc: 'DJ set, mix e musica',
+        music_yt_cta: 'Iscriviti su YouTube',
+        music_ig_desc: 'Musica · DJ · Vibes',
+        music_ig_visit: 'Vedi profilo',
+        music_ig_cta: 'Segui @cavi.media',
+        roulette_eyebrow: '07 — Playlist',
+        roulette_title: 'Scegli un brano',
+        roulette_tagline: 'Lascia che l\'archivio scelga per te.',
+        roulette_placeholder: 'Pronto quando vuoi.',
+        roulette_btn: 'Mescola',
+        contact_eyebrow: '06 — Contatti',
+        contact_title: 'Scrivimi',
+        contact_lead: 'Se hai un progetto in mente, una domanda o semplicemente voglia di scambiarci due idee, mi fa piacere sentirti.',
+        connect_title: 'Altrove',
+        lists_title: 'Le Mie Liste',
+        lists_tagline: 'Libri, film e album da ricordare.',
+        lists_col_title: 'Titolo',
+        lists_col_year: 'Anno',
+        lists_col_artist: 'Artista',
+        lists_filter: 'Filtra...',
+        lists_loading: 'Caricamento...',
+        lists_empty: 'Ancora niente qui.',
+        lists_error: 'Impossibile caricare lists/ — serve un server HTTP.',
+        lists_count: '{n} elementi',
+        back_top: 'Torna su',
+        copyright: '© 2026 Riccardo Fusiello.',
+        loading_text: 'Caricamento'
+      }
+    };
+
+    let currentLang = document.documentElement.lang || 'en';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) el.innerHTML = translations[lang][key];
+      });
+
+      document.querySelectorAll('[data-i18n-ph]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-ph');
+        if (translations[lang][key]) el.setAttribute('placeholder', translations[lang][key]);
+      });
+
+      const langFlag = document.getElementById('langFlag');
+      const langLabel = document.getElementById('langLabel');
+      if (langFlag && langLabel) {
+        langFlag.textContent = lang === 'en' ? '🇬🇧' : '🇮🇹';
+        langLabel.textContent = lang === 'en' ? 'EN' : 'IT';
+      }
+
+      const loadingTextEl = document.getElementById('loadingText');
+      if (loadingTextEl) loadingTextEl.textContent = translations[lang].loading_text;
+
+      const toggle = document.getElementById('langToggle');
+      if (toggle) {
+        toggle.classList.add('is-switching');
+        setTimeout(() => toggle.classList.remove('is-switching'), 350);
+      }
+
+      if (typeof renderLists === 'function' && typeof listsLoaded !== 'undefined' && listsLoaded) renderLists();
+    }
+
+    setLanguage(currentLang);
+  </script>
+</body>
+</html>
