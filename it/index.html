@@ -103,6 +103,7 @@
           <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">Chi sono</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav_experience">Esperienza</a></li>
           <li class="nav-item"><a class="nav-link" href="#work" data-i18n="nav_work">Lavori</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav_projects">Progetti</a></li>
           <li class="nav-item"><a class="nav-link" href="#lists" id="listsNavLink" data-i18n="nav_lists">Liste</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="#music" data-i18n="nav_music">Musica</a></li> -->
           <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contatti</a></li>
@@ -391,6 +392,92 @@
       </div>
     </section>
 
+    <section id="projects" class="section projects">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="projects_eyebrow">06 — Open source</p>
+        <h2 class="section-title reveal" style="--d:.05s" data-i18n="projects_title">Strumenti che ho costruito</h2>
+        <p class="section-lead reveal" style="--d:.1s" data-i18n="projects_intro">Quattro strumenti local-first che uso io stesso. Girano sulla tua macchina e il codice è su GitHub.</p>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" style="--d:.14s">
+            <a class="project-card__media" href="https://github.com/riccardoFus/ai-voice-remover" target="_blank" rel="noopener" aria-label="AI Voice Remover su GitHub">
+              <img src="../misc/projects/ai-voice-remover.webp" alt="Interfaccia di AI Voice Remover" loading="lazy" width="1200" height="875">
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <h3 class="project-card__title" data-i18n="proj_voice_title">AI Voice Remover</h3>
+                <span class="project-card__meta">Flask · Demucs</span>
+              </div>
+              <p class="project-card__text" data-i18n="proj_voice_desc">Separa voce, strumentale e singoli stem da qualsiasi brano, poi pulisce i residui vocali e il rumore. Tutto in locale, con coda job, waveform e confronto A/B.</p>
+              <ul class="tags project-card__tags">
+                <li>Python</li><li>PyTorch</li><li>Demucs</li>
+              </ul>
+              <a class="project-card__link" href="https://github.com/riccardoFus/ai-voice-remover" target="_blank" rel="noopener">
+                <span data-i18n="project_github">Vedi su GitHub</span> <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--d:.2s">
+            <a class="project-card__media" href="https://github.com/riccardoFus/lumen-studio" target="_blank" rel="noopener" aria-label="Lumen Studio su GitHub">
+              <img src="../misc/projects/lumen-studio.webp" alt="Confronto prima e dopo in Lumen Studio" loading="lazy" width="1200" height="875">
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <h3 class="project-card__title" data-i18n="proj_lumen_title">Lumen Studio</h3>
+                <span class="project-card__meta">FastAPI · Real-ESRGAN</span>
+              </div>
+              <p class="project-card__text" data-i18n="proj_lumen_desc">Ingrandisce le immagini con Real-ESRGAN, mostra uno slider prima/dopo ed esporta in PNG, JPEG, WebP, TIFF o PDF. Nessuna immagine lascia il computer.</p>
+              <ul class="tags project-card__tags">
+                <li>Python</li><li>Real-ESRGAN</li><li>PyTorch</li>
+              </ul>
+              <a class="project-card__link" href="https://github.com/riccardoFus/lumen-studio" target="_blank" rel="noopener">
+                <span data-i18n="project_github">Vedi su GitHub</span> <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--d:.26s">
+            <a class="project-card__media" href="https://github.com/riccardoFus/mdtopdf-ui" target="_blank" rel="noopener" aria-label="MD to PDF Studio su GitHub">
+              <img src="../misc/projects/mdtopdf-ui.webp" alt="Interfaccia di MD to PDF Studio con editor e anteprima PDF" loading="lazy" width="1200" height="875">
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <h3 class="project-card__title" data-i18n="proj_md_title">MD → PDF Studio</h3>
+                <span class="project-card__meta">FastAPI · WeasyPrint</span>
+              </div>
+              <p class="project-card__text" data-i18n="proj_md_desc">Un editor Markdown locale con anteprima PDF fedele, diagrammi Mermaid, LaTeX, slide Marp e controllo completo della tipografia.</p>
+              <ul class="tags project-card__tags">
+                <li>Python</li><li>Mermaid</li><li>WeasyPrint</li>
+              </ul>
+              <a class="project-card__link" href="https://github.com/riccardoFus/mdtopdf-ui" target="_blank" rel="noopener">
+                <span data-i18n="project_github">Vedi su GitHub</span> <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--d:.32s">
+            <a class="project-card__media" href="https://github.com/riccardoFus/spotify-youtube-downloader" target="_blank" rel="noopener" aria-label="Music Grabber su GitHub">
+              <img src="../misc/projects/spotify-youtube-downloader.webp" alt="Interfaccia di Music Grabber" loading="lazy" width="1200" height="875">
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__head">
+                <h3 class="project-card__title" data-i18n="proj_music_title">Music Grabber</h3>
+                <span class="project-card__meta">FastAPI · yt-dlp</span>
+              </div>
+              <p class="project-card__text" data-i18n="proj_music_desc">Scarica brani, album e playlist da Spotify e YouTube, con dialoghi nativi per le cartelle, log live e ricerca full-text tra le esecuzioni.</p>
+              <ul class="tags project-card__tags">
+                <li>Python</li><li>Spotify</li><li>yt-dlp</li>
+              </ul>
+              <a class="project-card__link" href="https://github.com/riccardoFus/spotify-youtube-downloader" target="_blank" rel="noopener">
+                <span data-i18n="project_github">Vedi su GitHub</span> <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Music and roulette are kept here for reference. Remove this comment block to restore them.
     <section id="music" class="section section--alt music">
       <div class="container">
@@ -501,7 +588,7 @@
 
     <section id="contact" class="section section--alt contact">
       <div class="container">
-        <p class="eyebrow reveal" data-i18n="contact_eyebrow">06 — Contatti</p>
+        <p class="eyebrow reveal" data-i18n="contact_eyebrow">07 — Contatti</p>
         <h2 class="section-title reveal" style="--d:.05s" data-i18n="contact_title">Scrivimi</h2>
         <p class="section-lead reveal" style="--d:.1s" data-i18n="contact_lead">Se hai un progetto in mente, una domanda o semplicemente voglia di scambiarci due idee, mi fa piacere sentirti.</p>
         <div class="contact__grid">
@@ -904,6 +991,7 @@
         nav_about: 'About',
         nav_experience: 'Experience',
         nav_work: 'Work',
+        nav_projects: 'Projects',
         nav_lists: 'Lists',
         nav_music: 'Music',
         nav_contact: 'Contact',
@@ -998,6 +1086,18 @@
         project_cta: 'Read more',
         project_quote: 'A quiet place for the books you actually own.',
         modal_tag: 'Project',
+        projects_eyebrow: '06 — Open source',
+        projects_title: 'Tools I\'ve built',
+        projects_intro: 'Four local-first tools I use myself. Each one runs on your machine, and the source is on GitHub.',
+        proj_voice_title: 'AI Voice Remover',
+        proj_voice_desc: 'Separates vocals, instrumental and individual stems from any track, then cleans up leftover voice and noise. Local, with a job queue, waveforms and A/B comparison.',
+        proj_lumen_title: 'Lumen Studio',
+        proj_lumen_desc: 'Upscales images with Real-ESRGAN, shows a before/after slider and exports to PNG, JPEG, WebP, TIFF or PDF. No image leaves the machine.',
+        proj_md_title: 'MD → PDF Studio',
+        proj_md_desc: 'A local Markdown editor with a faithful PDF preview, Mermaid diagrams, LaTeX, Marp slides and full control over typography.',
+        proj_music_title: 'Music Grabber',
+        proj_music_desc: 'Downloads tracks, albums and playlists from Spotify and YouTube, with native folder dialogs, live logs and full-text search across runs.',
+        project_github: 'View on GitHub',
         music_eyebrow: '06 — Sound',
         music_title: 'cavi.wav',
         music_tagline: 'Records, mixes and late-night discoveries.',
@@ -1016,7 +1116,7 @@
         roulette_tagline: 'Let the archive choose for you.',
         roulette_placeholder: 'Ready when you are.',
         roulette_btn: 'Shuffle',
-        contact_eyebrow: '06 — Contact',
+        contact_eyebrow: '07 — Contact',
         contact_title: 'Say hello',
         contact_lead: 'If you have a project in mind, a question, or just want to compare notes, I\'d like to hear from you.',
         connect_title: 'Elsewhere',
@@ -1038,6 +1138,7 @@
         nav_about: 'Chi sono',
         nav_experience: 'Esperienza',
         nav_work: 'Lavori',
+        nav_projects: 'Progetti',
         nav_lists: 'Liste',
         nav_music: 'Musica',
         nav_contact: 'Contatti',
@@ -1132,6 +1233,18 @@
         project_cta: 'Scopri di più',
         project_quote: 'Un posto tranquillo per i libri che hai davvero.',
         modal_tag: 'Progetto',
+        projects_eyebrow: '06 — Open source',
+        projects_title: 'Strumenti che ho costruito',
+        projects_intro: 'Quattro strumenti local-first che uso io stesso. Girano sulla tua macchina e il codice è su GitHub.',
+        proj_voice_title: 'AI Voice Remover',
+        proj_voice_desc: 'Separa voce, strumentale e singoli stem da qualsiasi brano, poi pulisce i residui vocali e il rumore. Tutto in locale, con coda job, waveform e confronto A/B.',
+        proj_lumen_title: 'Lumen Studio',
+        proj_lumen_desc: 'Ingrandisce le immagini con Real-ESRGAN, mostra uno slider prima/dopo ed esporta in PNG, JPEG, WebP, TIFF o PDF. Nessuna immagine lascia il computer.',
+        proj_md_title: 'MD → PDF Studio',
+        proj_md_desc: 'Un editor Markdown locale con anteprima PDF fedele, diagrammi Mermaid, LaTeX, slide Marp e controllo completo della tipografia.',
+        proj_music_title: 'Music Grabber',
+        proj_music_desc: 'Scarica brani, album e playlist da Spotify e YouTube, con dialoghi nativi per le cartelle, log live e ricerca full-text tra le esecuzioni.',
+        project_github: 'Vedi su GitHub',
         music_eyebrow: '06 — Suono',
         music_title: 'cavi.wav',
         music_tagline: 'Dischi, mix e scoperte notturne.',
@@ -1150,7 +1263,7 @@
         roulette_tagline: 'Lascia che l\'archivio scelga per te.',
         roulette_placeholder: 'Pronto quando vuoi.',
         roulette_btn: 'Mescola',
-        contact_eyebrow: '06 — Contatti',
+        contact_eyebrow: '07 — Contatti',
         contact_title: 'Scrivimi',
         contact_lead: 'Se hai un progetto in mente, una domanda o semplicemente voglia di scambiarci due idee, mi fa piacere sentirti.',
         connect_title: 'Altrove',
