@@ -668,6 +668,17 @@ body.is-loaded .hero__meta { animation: rise .9s var(--ease) .54s both; }
 .socials { display: flex; gap: .6rem; flex-wrap: wrap; }
 .socials a { width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid var(--line-strong); border-radius: 50%; color: var(--muted); transition: all .25s ease; }
 .socials a:hover { border-color: var(--red); color: var(--red-bright); transform: translateY(-3px); background: var(--red-soft); }
+.contact-card--wide { grid-column: 1 / -1; }
+.contact-links { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.4rem; }
+.contact-links li { border-top: 1px solid var(--line); }
+.contact-links li:nth-child(-n+2) { border-top: 0; }
+.contact-links a { display: block; padding: .95rem 0; transition: padding-left .3s var(--ease); }
+.contact-links a:hover { padding-left: .4rem; }
+.contact-links__label { display: block; font-family: var(--font-mono); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: .2rem; }
+.contact-links__title { display: block; font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; color: var(--text); transition: color .25s ease; }
+.contact-links__meta { display: block; font-family: var(--font-mono); font-size: .68rem; color: var(--faint); margin-top: .1rem; }
+.contact-links__note { display: block; font-size: .84rem; line-height: 1.55; color: var(--muted); margin-top: .25rem; }
+.contact-links a:hover .contact-links__title { color: var(--red-bright); }
 
 /* Footer */
 .footer { border-top: 1px solid var(--line); padding: 2rem 0; }
@@ -836,6 +847,9 @@ body.is-locked { position: fixed; left: 0; right: 0; width: 100%; }
   .work-list--grid li:first-child { border-top: 0; padding-top: 0; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card__head { flex-direction: column; gap: .2rem; }
+  .contact-links { grid-template-columns: 1fr; }
+  .contact-links li:nth-child(-n+2) { border-top: 1px solid var(--line); }
+  .contact-links li:first-child { border-top: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
